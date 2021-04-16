@@ -1,5 +1,5 @@
 {
-    "name": "microsoft/azure-storage-table",
+    "name": "aivanov-dev/azure-storage-table",
     "version": "2.0.3",
     "description": "This project provides a set of PHP client libraries that make it easy to access Microsoft Azure Storage Table APIs.",
     "keywords": [ "php", "azure", "storage", "sdk", "table" ],
