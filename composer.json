@@ -2,6 +2,7 @@
     "name": "aivanov-dev/azure-storage-legacy-php",
     "description": "This is a clone from https://github.com/Azure/azure-storage-php modified to support php 5.5.",
     "keywords": [ "php", "azure", "storage", "sdk" ],
+    "minimum-stability": "stable",
     "license": "MIT",
     "authors": [
         {
