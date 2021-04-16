@@ -12,25 +12,25 @@
  * limitations under the License.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Samples
+ * @package   MicrosoftAzureLegacy\Storage\Samples
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Samples;
+namespace MicrosoftAzureLegacy\Storage\Samples;
 
 require_once "../vendor/autoload.php";
 
-use MicrosoftAzure\Storage\Common\Exceptions\ServiceException;
-use MicrosoftAzure\Storage\Common\SharedAccessSignatureHelper;
-use MicrosoftAzure\Storage\Common\Internal\Resources;
-use MicrosoftAzure\Storage\Common\Internal\StorageServiceSettings;
-use MicrosoftAzure\Storage\Queue\Models\CreateQueueOptions;
-use MicrosoftAzure\Storage\Queue\Models\PeekMessagesOptions;
-use MicrosoftAzure\Storage\Queue\Models\ListMessagesOptions;
-use MicrosoftAzure\Storage\Queue\QueueRestProxy;
+use MicrosoftAzureLegacy\Storage\Common\Exceptions\ServiceException;
+use MicrosoftAzureLegacy\Storage\Common\SharedAccessSignatureHelper;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Resources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\StorageServiceSettings;
+use MicrosoftAzureLegacy\Storage\Queue\Models\CreateQueueOptions;
+use MicrosoftAzureLegacy\Storage\Queue\Models\PeekMessagesOptions;
+use MicrosoftAzureLegacy\Storage\Queue\Models\ListMessagesOptions;
+use MicrosoftAzureLegacy\Storage\Queue\QueueRestProxy;
 
 $connectionString = 'DefaultEndpointsProtocol=https;AccountName=<yourAccount>;AccountKey=<yourKey>';
 $queueClient = QueueRestProxy::createQueueService($connectionString);

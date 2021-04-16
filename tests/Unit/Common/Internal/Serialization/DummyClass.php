@@ -15,24 +15,24 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Common\Internal\Serialization
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Internal\Serialization
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Unit\Common\Internal\Serialization;
+namespace MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Internal\Serialization;
 
-use MicrosoftAzure\Storage\Tests\Framework\TestResources;
-use MicrosoftAzure\Storage\Common\Internal\Serialization\XmlSerializer;
-use MicrosoftAzure\Storage\Common\Models\ServiceProperties;
+use MicrosoftAzureLegacy\Storage\Tests\Framework\TestResources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Serialization\XmlSerializer;
+use MicrosoftAzureLegacy\Storage\Common\Models\ServiceProperties;
 
 /**
  * Dummy class for Xml Serializer.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Common\Internal\Serialization
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Internal\Serialization
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

@@ -15,23 +15,23 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Common
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Common
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Unit\Common;
+namespace MicrosoftAzureLegacy\Storage\Tests\Unit\Common;
 
-use MicrosoftAzure\Storage\Common\CloudConfigurationManager;
-use MicrosoftAzure\Storage\Common\Internal\ConnectionStringSource;
+use MicrosoftAzureLegacy\Storage\Common\CloudConfigurationManager;
+use MicrosoftAzureLegacy\Storage\Common\Internal\ConnectionStringSource;
 
 /**
  * Unit tests for class CloudConfigurationManager
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Common
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Common
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
@@ -44,11 +44,11 @@ class CloudConfigurationManagerTest extends \PHPUnit\Framework\TestCase
 
     public function setUp()
     {
-        $isInitialized = new \ReflectionProperty('MicrosoftAzure\Storage\Common\CloudConfigurationManager', '_isInitialized');
+        $isInitialized = new \ReflectionProperty('MicrosoftAzureLegacy\Storage\Common\CloudConfigurationManager', '_isInitialized');
         $isInitialized->setAccessible(true);
         $isInitialized->setValue(false);
 
-        $sources = new \ReflectionProperty('MicrosoftAzure\Storage\Common\CloudConfigurationManager', '_sources');
+        $sources = new \ReflectionProperty('MicrosoftAzureLegacy\Storage\Common\CloudConfigurationManager', '_sources');
         $sources->setAccessible(true);
         $sources->setValue(array());
     }

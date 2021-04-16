@@ -15,40 +15,40 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Functional\Blob
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Functional\Blob
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Functional\Blob;
+namespace MicrosoftAzureLegacy\Storage\Tests\Functional\Blob;
 
-use MicrosoftAzure\Storage\Tests\Framework\TestResources;
-use MicrosoftAzure\Storage\Blob\Models\AccessCondition;
-use MicrosoftAzure\Storage\Blob\Models\ContainerACL;
-use MicrosoftAzure\Storage\Blob\Models\CopyBlobOptions;
-use MicrosoftAzure\Storage\Blob\Models\BlobServiceOptions;
-use MicrosoftAzure\Storage\Blob\Models\CreateBlobOptions;
-use MicrosoftAzure\Storage\Blob\Models\CreateBlobSnapshotOptions;
-use MicrosoftAzure\Storage\Blob\Models\CreateContainerOptions;
-use MicrosoftAzure\Storage\Blob\Models\AppendBlockOptions;
-use MicrosoftAzure\Storage\Blob\Models\DeleteBlobOptions;
-use MicrosoftAzure\Storage\Blob\Models\GetBlobOptions;
-use MicrosoftAzure\Storage\Blob\Models\GetBlobPropertiesOptions;
-use MicrosoftAzure\Storage\Blob\Models\ListBlobsOptions;
-use MicrosoftAzure\Storage\Blob\Models\ListContainersOptions;
-use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
-use MicrosoftAzure\Storage\Blob\Models\SetBlobPropertiesOptions;
-use MicrosoftAzure\Storage\Common\Internal\Resources;
-use MicrosoftAzure\Storage\Common\Internal\Utilities;
-use MicrosoftAzure\Storage\Common\Models\Range;
-use MicrosoftAzure\Storage\Common\Models\RangeDiff;
-use MicrosoftAzure\Storage\Common\Models\Logging;
-use MicrosoftAzure\Storage\Common\Models\Metrics;
-use MicrosoftAzure\Storage\Common\Models\CORS;
-use MicrosoftAzure\Storage\Common\Models\RetentionPolicy;
-use MicrosoftAzure\Storage\Common\Models\ServiceProperties;
+use MicrosoftAzureLegacy\Storage\Tests\Framework\TestResources;
+use MicrosoftAzureLegacy\Storage\Blob\Models\AccessCondition;
+use MicrosoftAzureLegacy\Storage\Blob\Models\ContainerACL;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CopyBlobOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\BlobServiceOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CreateBlobOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CreateBlobSnapshotOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CreateContainerOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\AppendBlockOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\DeleteBlobOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\GetBlobOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\GetBlobPropertiesOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\ListBlobsOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\ListContainersOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\PublicAccessType;
+use MicrosoftAzureLegacy\Storage\Blob\Models\SetBlobPropertiesOptions;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Resources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Utilities;
+use MicrosoftAzureLegacy\Storage\Common\Models\Range;
+use MicrosoftAzureLegacy\Storage\Common\Models\RangeDiff;
+use MicrosoftAzureLegacy\Storage\Common\Models\Logging;
+use MicrosoftAzureLegacy\Storage\Common\Models\Metrics;
+use MicrosoftAzureLegacy\Storage\Common\Models\CORS;
+use MicrosoftAzureLegacy\Storage\Common\Models\RetentionPolicy;
+use MicrosoftAzureLegacy\Storage\Common\Models\ServiceProperties;
 
 class BlobServiceFunctionalTestData
 {

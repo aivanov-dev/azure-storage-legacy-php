@@ -15,26 +15,26 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Queue\Internal
+ * @package   MicrosoftAzureLegacy\Storage\Queue\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Queue\Internal;
+namespace MicrosoftAzureLegacy\Storage\Queue\Internal;
 
-use MicrosoftAzure\Storage\Queue\Models as QueueModels;
-use MicrosoftAzure\Storage\Common\Models\ServiceProperties;
-use MicrosoftAzure\Storage\Common\Models\ServiceOptions;
-use MicrosoftAzure\Storage\Common\Models\GetServiceStatsResult;
+use MicrosoftAzureLegacy\Storage\Queue\Models as QueueModels;
+use MicrosoftAzureLegacy\Storage\Common\Models\ServiceProperties;
+use MicrosoftAzureLegacy\Storage\Common\Models\ServiceOptions;
+use MicrosoftAzureLegacy\Storage\Common\Models\GetServiceStatsResult;
 
 /**
  * This interface has all REST APIs provided by Windows Azure for queue service
  *
  * @ignore
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Queue\Internal
+ * @package   MicrosoftAzureLegacy\Storage\Queue\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
@@ -48,7 +48,7 @@ interface IQueue
      *
      * @param ServiceOptions $options The optional parameters.
      *
-     * @return \MicrosoftAzure\Storage\Common\Models\GetServicePropertiesResult
+     * @return \MicrosoftAzureLegacy\Storage\Common\Models\GetServicePropertiesResult
      */
     public function getServiceProperties(
         ServiceOptions $options = null

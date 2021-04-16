@@ -15,14 +15,14 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Blob\Models
+ * @package   MicrosoftAzureLegacy\Storage\Blob\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Blob\Models;
+namespace MicrosoftAzureLegacy\Storage\Blob\Models;
 
 use Psr\Http\Message\StreamInterface;
 
@@ -30,7 +30,7 @@ use Psr\Http\Message\StreamInterface;
  * Holds result of GetBlob API.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Blob\Models
+ * @package   MicrosoftAzureLegacy\Storage\Blob\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

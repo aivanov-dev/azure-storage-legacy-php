@@ -16,21 +16,21 @@
  *
  * @ignore
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Internal
+ * @package   MicrosoftAzureLegacy\Storage\Common\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Common\Internal;
+namespace MicrosoftAzureLegacy\Storage\Common\Internal;
 
 /**
  * Trait implementing common logic for metadata, last-modified and etag. The
  * code is shared for multiple REST APIs.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Internal
+ * @package   MicrosoftAzureLegacy\Storage\Common\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

@@ -15,24 +15,24 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Exceptions
+ * @package   MicrosoftAzureLegacy\Storage\Common\Exceptions
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Common\Exceptions;
+namespace MicrosoftAzureLegacy\Storage\Common\Exceptions;
 
-use MicrosoftAzure\Storage\Common\Internal\Serialization\XmlSerializer;
-use MicrosoftAzure\Storage\Common\Internal\Resources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Serialization\XmlSerializer;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Resources;
 use Psr\Http\Message\ResponseInterface;
 
 /**
  * Fires when the response code is incorrect.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Exceptions
+ * @package   MicrosoftAzureLegacy\Storage\Common\Exceptions
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

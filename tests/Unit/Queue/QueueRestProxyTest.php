@@ -15,39 +15,39 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Queue
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Queue
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Unit\Queue;
+namespace MicrosoftAzureLegacy\Storage\Tests\Unit\Queue;
 
-use MicrosoftAzure\Storage\Common\Internal\Utilities;
-use MicrosoftAzure\Storage\Queue\Internal\IQueue;
-use MicrosoftAzure\Storage\Queue\QueueRestProxy;
-use MicrosoftAzure\Storage\Tests\Framework\QueueServiceRestProxyTestBase;
-use MicrosoftAzure\Storage\Common\Models\ServiceProperties;
-use MicrosoftAzure\Storage\Queue\Models\ListQueuesOptions;
-use MicrosoftAzure\Storage\Queue\Models\ListQueuesResult;
-use MicrosoftAzure\Storage\Queue\Models\CreateQueueOptions;
-use MicrosoftAzure\Storage\Queue\Models\GetQueueMetadataResult;
-use MicrosoftAzure\Storage\Queue\Models\ListMessagesResult;
-use MicrosoftAzure\Storage\Queue\Models\ListMessagesOptions;
-use MicrosoftAzure\Storage\Queue\Models\PeekMessagesResult;
-use MicrosoftAzure\Storage\Queue\Models\PeekMessagesOptions;
-use MicrosoftAzure\Storage\Queue\Models\UpdateMessageResult;
-use MicrosoftAzure\Storage\Queue\Models\QueueServiceOptions;
-use MicrosoftAzure\Storage\Queue\Models\QueueACL;
-use MicrosoftAzure\Storage\Tests\Framework\TestResources;
-use MicrosoftAzure\Storage\Common\Internal\Resources;
-use MicrosoftAzure\Storage\Common\Exceptions\ServiceException;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Utilities;
+use MicrosoftAzureLegacy\Storage\Queue\Internal\IQueue;
+use MicrosoftAzureLegacy\Storage\Queue\QueueRestProxy;
+use MicrosoftAzureLegacy\Storage\Tests\Framework\QueueServiceRestProxyTestBase;
+use MicrosoftAzureLegacy\Storage\Common\Models\ServiceProperties;
+use MicrosoftAzureLegacy\Storage\Queue\Models\ListQueuesOptions;
+use MicrosoftAzureLegacy\Storage\Queue\Models\ListQueuesResult;
+use MicrosoftAzureLegacy\Storage\Queue\Models\CreateQueueOptions;
+use MicrosoftAzureLegacy\Storage\Queue\Models\GetQueueMetadataResult;
+use MicrosoftAzureLegacy\Storage\Queue\Models\ListMessagesResult;
+use MicrosoftAzureLegacy\Storage\Queue\Models\ListMessagesOptions;
+use MicrosoftAzureLegacy\Storage\Queue\Models\PeekMessagesResult;
+use MicrosoftAzureLegacy\Storage\Queue\Models\PeekMessagesOptions;
+use MicrosoftAzureLegacy\Storage\Queue\Models\UpdateMessageResult;
+use MicrosoftAzureLegacy\Storage\Queue\Models\QueueServiceOptions;
+use MicrosoftAzureLegacy\Storage\Queue\Models\QueueACL;
+use MicrosoftAzureLegacy\Storage\Tests\Framework\TestResources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Resources;
+use MicrosoftAzureLegacy\Storage\Common\Exceptions\ServiceException;
 
 /**
  * Unit tests for QueueRestProxy class
  *
- * @package    MicrosoftAzure\Storage\Tests\Unit\Queue
+ * @package    MicrosoftAzureLegacy\Storage\Tests\Unit\Queue
  * @author     Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright  2016 Microsoft Corporation
  * @license    https://github.com/azure/azure-storage-php/LICENSE
@@ -147,7 +147,7 @@ class QueueRestProxyTest extends QueueServiceRestProxyTestBase
     }
 
     /**
-     * @expectedException MicrosoftAzure\Storage\Common\Exceptions\ServiceException
+     * @expectedException MicrosoftAzureLegacy\Storage\Common\Exceptions\ServiceException
      * @expectedExceptionMessage 400
      */
     public function testListQueuesWithInvalidNextMarkerFail()
@@ -246,7 +246,7 @@ class QueueRestProxyTest extends QueueServiceRestProxyTestBase
     }
 
     /**
-     * @expectedException MicrosoftAzure\Storage\Common\Exceptions\ServiceException
+     * @expectedException MicrosoftAzureLegacy\Storage\Common\Exceptions\ServiceException
      * @expectedExceptionMessage 400
      */
     public function testCreateQueueInvalidNameFail()
@@ -274,7 +274,7 @@ class QueueRestProxyTest extends QueueServiceRestProxyTestBase
     }
 
     /**
-     * @expectedException MicrosoftAzure\Storage\Common\Exceptions\ServiceException
+     * @expectedException MicrosoftAzureLegacy\Storage\Common\Exceptions\ServiceException
      * @expectedExceptionMessage 404
      */
     public function testDeleteQueueFail()

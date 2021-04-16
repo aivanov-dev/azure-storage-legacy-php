@@ -15,25 +15,25 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Table\Models
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Table\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
-namespace MicrosoftAzure\Storage\Tests\Unit\Table\Models;
+namespace MicrosoftAzureLegacy\Storage\Tests\Unit\Table\Models;
 
-use MicrosoftAzure\Storage\Table\Models\TableACL;
-use MicrosoftAzure\Storage\Tests\Framework\TestResources;
-use MicrosoftAzure\Storage\Common\Internal\Resources;
-use MicrosoftAzure\Storage\Common\Internal\Utilities;
-use MicrosoftAzure\Storage\Common\Internal\Serialization\XmlSerializer;
+use MicrosoftAzureLegacy\Storage\Table\Models\TableACL;
+use MicrosoftAzureLegacy\Storage\Tests\Framework\TestResources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Resources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Utilities;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Serialization\XmlSerializer;
 
 /**
  * Unit tests for class TableACL
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Table\Models
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Table\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

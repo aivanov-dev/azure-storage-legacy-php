@@ -15,23 +15,23 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Blob\Models
+ * @package   MicrosoftAzureLegacy\Storage\Blob\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Blob\Models;
+namespace MicrosoftAzureLegacy\Storage\Blob\Models;
 
-use MicrosoftAzure\Storage\Blob\Internal\BlobResources as Resources;
-use MicrosoftAzure\Storage\Common\Internal\Utilities;
+use MicrosoftAzureLegacy\Storage\Blob\Internal\BlobResources as Resources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Utilities;
 
 /**
  * The result of calling acquireLease API.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Blob\Models
+ * @package   MicrosoftAzureLegacy\Storage\Blob\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
@@ -48,7 +48,7 @@ class LeaseResult
      *
      * @internal
      *
-     * @return \MicrosoftAzure\Storage\Blob\Models\LeaseResult
+     * @return \MicrosoftAzureLegacy\Storage\Blob\Models\LeaseResult
      */
     public static function create(array $headers)
     {

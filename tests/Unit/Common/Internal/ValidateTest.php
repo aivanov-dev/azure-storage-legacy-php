@@ -15,25 +15,25 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Common\Internal
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Unit\Common\Internal;
+namespace MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Internal;
 
-use MicrosoftAzure\Storage\Common\Internal\Validate;
-use MicrosoftAzure\Storage\Common\Exceptions\InvalidArgumentTypeException;
-use MicrosoftAzure\Storage\Common\Internal\Resources;
-use MicrosoftAzure\Storage\Common\Internal\Utilities;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Validate;
+use MicrosoftAzureLegacy\Storage\Common\Exceptions\InvalidArgumentTypeException;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Resources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Utilities;
 
 /**
  * Unit tests for class ValidateTest
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Common\Internal
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
@@ -388,7 +388,7 @@ class ValidateTest extends \PHPUnit\Framework\TestCase
     {
         // Setup
         $value = new Resources();
-        $type = 'MicrosoftAzure\Storage\Common\Internal\Resources';
+        $type = 'MicrosoftAzureLegacy\Storage\Common\Internal\Resources';
 
         // Test
         $result = Validate::isA($value, $type, 'value');
@@ -402,7 +402,7 @@ class ValidateTest extends \PHPUnit\Framework\TestCase
         // Setup
         $this->setExpectedException('\InvalidArgumentException');
         $value = null;
-        $type = 'MicrosoftAzure\Storage\Common\Internal\Resources';
+        $type = 'MicrosoftAzureLegacy\Storage\Common\Internal\Resources';
 
         // Test
         $result = Validate::isA($value, $type, 'value');
@@ -428,7 +428,7 @@ class ValidateTest extends \PHPUnit\Framework\TestCase
         // Setup
         $this->setExpectedException(get_class(new InvalidArgumentTypeException('')));
         $value = 'test string';
-        $type = 'MicrosoftAzure\Storage\Common\Internal\Resources';
+        $type = 'MicrosoftAzureLegacy\Storage\Common\Internal\Resources';
 
         // Test
         $result = Validate::isA($value, $type, 'value');

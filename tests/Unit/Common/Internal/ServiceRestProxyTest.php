@@ -15,31 +15,31 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Common\Internal
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Unit\Common\Internal;
+namespace MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Internal;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Request;
-use MicrosoftAzure\Storage\Common\Internal\ServiceRestProxy;
-use MicrosoftAzure\Storage\Common\Internal\Resources;
-use MicrosoftAzure\Storage\Tests\Mock\Common\Internal\Filters\SimpleFilterMock;
-use MicrosoftAzure\Storage\Blob\Models\AccessCondition;
-use MicrosoftAzure\Storage\Common\Internal\Serialization\XmlSerializer;
+use MicrosoftAzureLegacy\Storage\Common\Internal\ServiceRestProxy;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Resources;
+use MicrosoftAzureLegacy\Storage\Tests\Mock\Common\Internal\Filters\SimpleFilterMock;
+use MicrosoftAzureLegacy\Storage\Blob\Models\AccessCondition;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Serialization\XmlSerializer;
 
 /**
  * Unit tests for class ServiceRestProxy
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Common\Internal
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

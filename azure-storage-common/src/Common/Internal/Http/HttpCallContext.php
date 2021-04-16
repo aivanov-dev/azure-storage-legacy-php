@@ -15,26 +15,26 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Internal\Http
+ * @package   MicrosoftAzureLegacy\Storage\Common\Internal\Http
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Common\Internal\Http;
+namespace MicrosoftAzureLegacy\Storage\Common\Internal\Http;
 
-use MicrosoftAzure\Storage\Common\Internal\Utilities;
-use MicrosoftAzure\Storage\Common\Internal\Resources;
-use MicrosoftAzure\Storage\Common\Internal\Validate;
-use MicrosoftAzure\Storage\Common\Models\ServiceOptions;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Utilities;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Resources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Validate;
+use MicrosoftAzureLegacy\Storage\Common\Models\ServiceOptions;
 
 /**
  * Holds basic elements for making HTTP call.
  *
  * @ignore
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Internal\Http
+ * @package   MicrosoftAzureLegacy\Storage\Common\Internal\Http
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

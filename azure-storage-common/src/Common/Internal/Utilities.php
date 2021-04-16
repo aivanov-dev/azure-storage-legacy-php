@@ -16,14 +16,14 @@
  *
  * @ignore
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Internal
+ * @package   MicrosoftAzureLegacy\Storage\Common\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Common\Internal;
+namespace MicrosoftAzureLegacy\Storage\Common\Internal;
 
 use Psr\Http\Message\StreamInterface;
 
@@ -31,7 +31,7 @@ use Psr\Http\Message\StreamInterface;
  * Utilities for the project
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Internal
+ * @package   MicrosoftAzureLegacy\Storage\Common\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

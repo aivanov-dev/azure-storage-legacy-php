@@ -15,25 +15,25 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Common\Models
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Unit\Common\Models;
+namespace MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Models;
 
-use MicrosoftAzure\Storage\Common\Models\Logging;
-use MicrosoftAzure\Storage\Tests\Framework\TestResources;
-use MicrosoftAzure\Storage\Common\Models\RetentionPolicy;
-use MicrosoftAzure\Storage\Common\Internal\Utilities;
+use MicrosoftAzureLegacy\Storage\Common\Models\Logging;
+use MicrosoftAzureLegacy\Storage\Tests\Framework\TestResources;
+use MicrosoftAzureLegacy\Storage\Common\Models\RetentionPolicy;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Utilities;
 
 /**
  * Unit tests for class Logging
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Common\Models
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

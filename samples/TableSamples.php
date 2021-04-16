@@ -12,32 +12,32 @@
  * limitations under the License.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Samples
+ * @package   MicrosoftAzureLegacy\Storage\Samples
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Samples;
+namespace MicrosoftAzureLegacy\Storage\Samples;
 
 require_once "../vendor/autoload.php";
 
-use MicrosoftAzure\Storage\Table\Models\BatchOperations;
-use MicrosoftAzure\Storage\Table\Models\Entity;
-use MicrosoftAzure\Storage\Table\Models\EdmType;
-use MicrosoftAzure\Storage\Table\Models\Filters\Filter;
-use MicrosoftAzure\Storage\Table\Models\QueryEntitiesOptions;
-use MicrosoftAzure\Storage\Table\Models\QueryTablesOptions;
-use MicrosoftAzure\Storage\Common\Exceptions\ServiceException;
-use MicrosoftAzure\Storage\Common\Internal\Resources;
-use MicrosoftAzure\Storage\Common\Internal\StorageServiceSettings;
-use MicrosoftAzure\Storage\Common\Models\Logging;
-use MicrosoftAzure\Storage\Common\Models\Metrics;
-use MicrosoftAzure\Storage\Common\Models\RetentionPolicy;
-use MicrosoftAzure\Storage\Common\Models\ServiceProperties;
-use MicrosoftAzure\Storage\Common\SharedAccessSignatureHelper;
-use MicrosoftAzure\Storage\Table\TableRestProxy;
+use MicrosoftAzureLegacy\Storage\Table\Models\BatchOperations;
+use MicrosoftAzureLegacy\Storage\Table\Models\Entity;
+use MicrosoftAzureLegacy\Storage\Table\Models\EdmType;
+use MicrosoftAzureLegacy\Storage\Table\Models\Filters\Filter;
+use MicrosoftAzureLegacy\Storage\Table\Models\QueryEntitiesOptions;
+use MicrosoftAzureLegacy\Storage\Table\Models\QueryTablesOptions;
+use MicrosoftAzureLegacy\Storage\Common\Exceptions\ServiceException;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Resources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\StorageServiceSettings;
+use MicrosoftAzureLegacy\Storage\Common\Models\Logging;
+use MicrosoftAzureLegacy\Storage\Common\Models\Metrics;
+use MicrosoftAzureLegacy\Storage\Common\Models\RetentionPolicy;
+use MicrosoftAzureLegacy\Storage\Common\Models\ServiceProperties;
+use MicrosoftAzureLegacy\Storage\Common\SharedAccessSignatureHelper;
+use MicrosoftAzureLegacy\Storage\Table\TableRestProxy;
 
 $connectionString = 'DefaultEndpointsProtocol=https;AccountName=<yourAccount>;AccountKey=<yourKey>';
 $tableClient = TableRestProxy::createTableService($connectionString);

@@ -15,16 +15,16 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Internal\Authentication
+ * @package   MicrosoftAzureLegacy\Storage\Common\Internal\Authentication
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Functional\Common;
+namespace MicrosoftAzureLegacy\Storage\Tests\Functional\Common;
 
-use MicrosoftAzure\Storage\Common\SharedAccessSignatureHelper;
+use MicrosoftAzureLegacy\Storage\Common\SharedAccessSignatureHelper;
 
 /**
  * Provides methods to access the account name and key for the

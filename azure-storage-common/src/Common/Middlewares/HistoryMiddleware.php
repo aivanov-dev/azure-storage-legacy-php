@@ -15,18 +15,18 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Middlewares
+ * @package   MicrosoftAzureLegacy\Storage\Common\Middlewares
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Common\Middlewares;
+namespace MicrosoftAzureLegacy\Storage\Common\Middlewares;
 
-use MicrosoftAzure\Storage\Common\Internal\Validate;
-use MicrosoftAzure\Storage\Common\Internal\Utilities;
-use MicrosoftAzure\Storage\Common\Internal\Serialization\MessageSerializer;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Validate;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Utilities;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Serialization\MessageSerializer;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use GuzzleHttp\Promise\RejectedPromise;
@@ -40,7 +40,7 @@ use GuzzleHttp\Promise\RejectedPromise;
  * intended to persist between different API calls.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Middlewares
+ * @package   MicrosoftAzureLegacy\Storage\Common\Middlewares
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

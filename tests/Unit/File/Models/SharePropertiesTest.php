@@ -15,25 +15,25 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\File\Models
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\File\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Unit\File\Models;
+namespace MicrosoftAzureLegacy\Storage\Tests\Unit\File\Models;
 
-use MicrosoftAzure\Storage\File\Models\ShareProperties;
-use MicrosoftAzure\Storage\Tests\Framework\TestResources;
-use MicrosoftAzure\Storage\Common\Internal\Utilities;
-use MicrosoftAzure\Storage\Common\Internal\Resources;
+use MicrosoftAzureLegacy\Storage\File\Models\ShareProperties;
+use MicrosoftAzureLegacy\Storage\Tests\Framework\TestResources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Utilities;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Resources;
 
 /**
  * Unit tests for class ShareProperties
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\File\Models
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\File\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

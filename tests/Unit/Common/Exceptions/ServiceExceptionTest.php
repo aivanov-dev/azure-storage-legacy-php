@@ -15,23 +15,23 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Common\Exceptions
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Exceptions
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Unit\Common\Exceptions;
+namespace MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Exceptions;
 
-use MicrosoftAzure\Storage\Common\Exceptions\ServiceException;
-use MicrosoftAzure\Storage\Tests\Framework\TestResources;
+use MicrosoftAzureLegacy\Storage\Common\Exceptions\ServiceException;
+use MicrosoftAzureLegacy\Storage\Tests\Framework\TestResources;
 
 /**
  * Unit tests for class ServiceException
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Common\Exceptions
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Exceptions
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

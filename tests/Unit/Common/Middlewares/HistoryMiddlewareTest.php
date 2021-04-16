@@ -15,17 +15,17 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Common\Middlewares
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Middlewares
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Unit\Common\Middlewares;
+namespace MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Middlewares;
 
-use MicrosoftAzure\Storage\Common\Middlewares\HistoryMiddleware;
-use MicrosoftAzure\Storage\Tests\Framework\ReflectionTestBase;
+use MicrosoftAzureLegacy\Storage\Common\Middlewares\HistoryMiddleware;
+use MicrosoftAzureLegacy\Storage\Tests\Framework\ReflectionTestBase;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\Response;
 use GuzzleHttp\Psr7\Request;
@@ -34,7 +34,7 @@ use GuzzleHttp\Psr7\Request;
  * Unit tests for class HistoryMiddleware
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Common\Middlewares
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Middlewares
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

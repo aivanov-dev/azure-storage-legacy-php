@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "MicrosoftAzure\\Storage\\Blob\\": "src/Blob"
+            "MicrosoftAzureLegacy\\Storage\\Blob\\": "src/Blob"
         }
     }
 }

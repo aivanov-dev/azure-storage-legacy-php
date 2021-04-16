@@ -15,23 +15,23 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Blob\Models
+ * @package   MicrosoftAzureLegacy\Storage\Blob\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Blob\Models;
+namespace MicrosoftAzureLegacy\Storage\Blob\Models;
 
-use MicrosoftAzure\Storage\Blob\Internal\BlobResources;
-use MicrosoftAzure\Storage\Common\Models\AccessPolicy;
+use MicrosoftAzureLegacy\Storage\Blob\Internal\BlobResources;
+use MicrosoftAzureLegacy\Storage\Common\Models\AccessPolicy;
 
 /**
  * Holds access policy elements
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Blob\Models
+ * @package   MicrosoftAzureLegacy\Storage\Blob\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

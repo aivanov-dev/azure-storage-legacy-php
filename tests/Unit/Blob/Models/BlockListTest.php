@@ -15,24 +15,24 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Blob\Models
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Blob\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
-namespace MicrosoftAzure\Storage\Tests\Unit\Blob\Models;
+namespace MicrosoftAzureLegacy\Storage\Tests\Unit\Blob\Models;
 
-use MicrosoftAzure\Storage\Common\Internal\Serialization\XmlSerializer;
-use MicrosoftAzure\Storage\Blob\Models\BlockList;
-use MicrosoftAzure\Storage\Blob\Models\BlobBlockType;
-use MicrosoftAzure\Storage\Blob\Models\Block;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Serialization\XmlSerializer;
+use MicrosoftAzureLegacy\Storage\Blob\Models\BlockList;
+use MicrosoftAzureLegacy\Storage\Blob\Models\BlobBlockType;
+use MicrosoftAzureLegacy\Storage\Blob\Models\Block;
 
 /**
  * Unit tests for class BlockList
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Blob\Models
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Blob\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

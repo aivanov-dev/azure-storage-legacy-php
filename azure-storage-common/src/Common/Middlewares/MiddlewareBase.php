@@ -15,14 +15,14 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Middlewares
+ * @package   MicrosoftAzureLegacy\Storage\Common\Middlewares
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Common\Middlewares;
+namespace MicrosoftAzureLegacy\Storage\Common\Middlewares;
 
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
@@ -34,7 +34,7 @@ use GuzzleHttp\Promise\RejectedPromise;
  * other behaviors like logging, retrying and debugging.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Middlewares
+ * @package   MicrosoftAzureLegacy\Storage\Common\Middlewares
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

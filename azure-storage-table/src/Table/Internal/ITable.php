@@ -15,26 +15,26 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Table\Internal
+ * @package   MicrosoftAzureLegacy\Storage\Table\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Table\Internal;
+namespace MicrosoftAzureLegacy\Storage\Table\Internal;
 
-use MicrosoftAzure\Storage\Table\Models as TableModels;
-use MicrosoftAzure\Storage\Common\Models\ServiceProperties;
-use MicrosoftAzure\Storage\Common\Models\ServiceOptions;
-use MicrosoftAzure\Storage\Common\Models\GetServiceStatsResult;
+use MicrosoftAzureLegacy\Storage\Table\Models as TableModels;
+use MicrosoftAzureLegacy\Storage\Common\Models\ServiceProperties;
+use MicrosoftAzureLegacy\Storage\Common\Models\ServiceOptions;
+use MicrosoftAzureLegacy\Storage\Common\Models\GetServiceStatsResult;
 
 /**
  * This interface has all REST APIs provided by Windows Azure for Table service.
  *
  * @ignore
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Table\Internal
+ * @package   MicrosoftAzureLegacy\Storage\Table\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
@@ -48,7 +48,7 @@ interface ITable
     *
     * @param ServiceOptions $options optional table service options.
     *
-    * @return \MicrosoftAzure\Storage\Common\Models\GetServicePropertiesResult
+    * @return \MicrosoftAzureLegacy\Storage\Common\Models\GetServicePropertiesResult
     *
     * @see http://msdn.microsoft.com/en-us/library/windowsazure/hh452238.aspx
     */

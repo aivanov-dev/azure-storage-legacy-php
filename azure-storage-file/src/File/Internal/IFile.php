@@ -15,26 +15,26 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\File\Internal
+ * @package   MicrosoftAzureLegacy\Storage\File\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\File\Internal;
+namespace MicrosoftAzureLegacy\Storage\File\Internal;
 
-use MicrosoftAzure\Storage\File\Models as FileModels;
-use MicrosoftAzure\Storage\Common\Models\ServiceOptions;
-use MicrosoftAzure\Storage\Common\Models\ServiceProperties;
-use MicrosoftAzure\Storage\Common\Models\Range;
+use MicrosoftAzureLegacy\Storage\File\Models as FileModels;
+use MicrosoftAzureLegacy\Storage\Common\Models\ServiceOptions;
+use MicrosoftAzureLegacy\Storage\Common\Models\ServiceProperties;
+use MicrosoftAzureLegacy\Storage\Common\Models\Range;
 
 /**
  * This interface has all REST APIs provided by Windows Azure for File service.
  *
  * @ignore
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\File\Internal
+ * @package   MicrosoftAzureLegacy\Storage\File\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

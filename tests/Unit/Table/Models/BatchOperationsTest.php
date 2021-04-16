@@ -15,24 +15,24 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Table\Models
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Table\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Unit\Table\Models;
+namespace MicrosoftAzureLegacy\Storage\Tests\Unit\Table\Models;
 
-use MicrosoftAzure\Storage\Table\Models\BatchOperations;
-use MicrosoftAzure\Storage\Table\Models\BatchOperation;
-use MicrosoftAzure\Storage\Table\Models\Entity;
+use MicrosoftAzureLegacy\Storage\Table\Models\BatchOperations;
+use MicrosoftAzureLegacy\Storage\Table\Models\BatchOperation;
+use MicrosoftAzureLegacy\Storage\Table\Models\Entity;
 
 /**
  * Unit tests for class BatchOperations
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Table\Models
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Table\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

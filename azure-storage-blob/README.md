@@ -75,13 +75,13 @@ require_once "vendor/autoload.php";
   To create any Microsoft Azure service client you need to use the rest proxy classes, such as **BlobRestProxy** class:
 
 ```php
-use MicrosoftAzure\Storage\Blob\BlobRestProxy;
+use MicrosoftAzureLegacy\Storage\Blob\BlobRestProxy;
 ```
 
   To process exceptions you need:
 
 ```php
-use MicrosoftAzure\Storage\Common\ServiceException;
+use MicrosoftAzureLegacy\Storage\Common\ServiceException;
 ```
 
 * To instantiate the service client you will also need a valid [connection string](https://azure.microsoft.com/en-us/documentation/articles/storage-configure-connection-string/). The format is:
@@ -110,7 +110,7 @@ To specify the middlewares, user have to create an array with middlewares
 and put it in the `$requestOptions` with key 'middlewares'. The sequence of
 the array will affect the sequence in which the middleware is invoked. The
 `$requestOptions` can usually be set in the options of an API call, such as
-`MicrosoftAzure\Storage\Blob\Models\ListBlobOptions`.
+`MicrosoftAzureLegacy\Storage\Blob\Models\ListBlobOptions`.
 
 The user can push the middleware into the array with key 'middlewares' in
 services' `$_options` instead when creating them if the middleware is to be
@@ -125,10 +125,10 @@ $blobClient = BlobRestProxy::createBlobService(
 ```
 
 Each of the middleware should be either an instance of a sub-class that
-implements `MicrosoftAzure\Storage\Common\Internal\IMiddleware`, or a
+implements `MicrosoftAzureLegacy\Storage\Common\Internal\IMiddleware`, or a
 `callable` that follows the Guzzle middleware implementation convention.
 
-User can create self-defined middleware that inherits from `MicrosoftAzure\Storage\Common\Internal\Middlewares\MiddlewareBase`.
+User can create self-defined middleware that inherits from `MicrosoftAzureLegacy\Storage\Common\Internal\Middlewares\MiddlewareBase`.
 
 ### Using proxies
 To use proxies during HTTP requests, set system variable `HTTP_PROXY` and the proxy will be used.

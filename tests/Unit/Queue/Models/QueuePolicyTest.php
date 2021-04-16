@@ -15,24 +15,24 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Queue\Models
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Queue\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Unit\Queue\Models;
+namespace MicrosoftAzureLegacy\Storage\Tests\Unit\Queue\Models;
 
-use MicrosoftAzure\Storage\Queue\Internal\QueueResources;
-use MicrosoftAzure\Storage\Queue\Models\QueueAccessPolicy;
-use MicrosoftAzure\Storage\Tests\Unit\Common\Models\AccessPolicyTest;
+use MicrosoftAzureLegacy\Storage\Queue\Internal\QueueResources;
+use MicrosoftAzureLegacy\Storage\Queue\Models\QueueAccessPolicy;
+use MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Models\AccessPolicyTest;
 
 /**
  * Unit tests for class QueueAccessPolicy
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Queue\Models
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Queue\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

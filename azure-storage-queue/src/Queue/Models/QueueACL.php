@@ -15,24 +15,24 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Queue\Models
+ * @package   MicrosoftAzureLegacy\Storage\Queue\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Queue\Models;
+namespace MicrosoftAzureLegacy\Storage\Queue\Models;
 
-use MicrosoftAzure\Storage\Common\Internal\Validate;
-use MicrosoftAzure\Storage\Common\Internal\ACLBase;
-use MicrosoftAzure\Storage\Queue\Internal\QueueResources as Resources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Validate;
+use MicrosoftAzureLegacy\Storage\Common\Internal\ACLBase;
+use MicrosoftAzureLegacy\Storage\Queue\Internal\QueueResources as Resources;
 
 /**
  * Holds queue ACL members.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Queue\Models
+ * @package   MicrosoftAzureLegacy\Storage\Queue\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

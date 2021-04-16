@@ -15,23 +15,23 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Models
+ * @package   MicrosoftAzureLegacy\Storage\Common\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Common\Models;
+namespace MicrosoftAzureLegacy\Storage\Common\Models;
 
-use MicrosoftAzure\Storage\Common\Internal\Resources;
-use MicrosoftAzure\Storage\Common\Internal\Utilities;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Resources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Utilities;
 
 /**
  * Result from calling get service stats REST wrapper.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Models
+ * @package   MicrosoftAzureLegacy\Storage\Common\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
@@ -48,7 +48,7 @@ class GetServiceStatsResult
      * @internal
      * @param array $parsedResponse XML response parsed into array.
      *
-     * @return \MicrosoftAzure\Storage\Common\Models\GetServiceStatsResult
+     * @return \MicrosoftAzureLegacy\Storage\Common\Models\GetServiceStatsResult
      */
     public static function create(array $parsedResponse)
     {

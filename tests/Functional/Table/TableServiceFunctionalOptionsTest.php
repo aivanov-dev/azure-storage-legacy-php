@@ -15,33 +15,33 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Functional\Table
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Functional\Table
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Functional\Table;
+namespace MicrosoftAzureLegacy\Storage\Tests\Functional\Table;
 
-use MicrosoftAzure\Storage\Common\Models\Logging;
-use MicrosoftAzure\Storage\Common\Models\Metrics;
-use MicrosoftAzure\Storage\Common\Models\RetentionPolicy;
-use MicrosoftAzure\Storage\Common\Models\ServiceProperties;
-use MicrosoftAzure\Storage\Table\Models\DeleteEntityOptions;
-use MicrosoftAzure\Storage\Table\Models\EdmType;
-use MicrosoftAzure\Storage\Table\Models\Entity;
-use MicrosoftAzure\Storage\Table\Models\Property;
-use MicrosoftAzure\Storage\Table\Models\Query;
-use MicrosoftAzure\Storage\Table\Models\QueryEntitiesOptions;
-use MicrosoftAzure\Storage\Table\Models\QueryTablesOptions;
-use MicrosoftAzure\Storage\Table\Models\TableServiceOptions;
-use MicrosoftAzure\Storage\Table\Models\Filters\BinaryFilter;
-use MicrosoftAzure\Storage\Table\Models\Filters\ConstantFilter;
-use MicrosoftAzure\Storage\Table\Models\Filters\Filter;
-use MicrosoftAzure\Storage\Table\Models\Filters\PropertyNameFilter;
-use MicrosoftAzure\Storage\Table\Models\Filters\QueryStringFilter;
-use MicrosoftAzure\Storage\Table\Models\Filters\UnaryFilter;
+use MicrosoftAzureLegacy\Storage\Common\Models\Logging;
+use MicrosoftAzureLegacy\Storage\Common\Models\Metrics;
+use MicrosoftAzureLegacy\Storage\Common\Models\RetentionPolicy;
+use MicrosoftAzureLegacy\Storage\Common\Models\ServiceProperties;
+use MicrosoftAzureLegacy\Storage\Table\Models\DeleteEntityOptions;
+use MicrosoftAzureLegacy\Storage\Table\Models\EdmType;
+use MicrosoftAzureLegacy\Storage\Table\Models\Entity;
+use MicrosoftAzureLegacy\Storage\Table\Models\Property;
+use MicrosoftAzureLegacy\Storage\Table\Models\Query;
+use MicrosoftAzureLegacy\Storage\Table\Models\QueryEntitiesOptions;
+use MicrosoftAzureLegacy\Storage\Table\Models\QueryTablesOptions;
+use MicrosoftAzureLegacy\Storage\Table\Models\TableServiceOptions;
+use MicrosoftAzureLegacy\Storage\Table\Models\Filters\BinaryFilter;
+use MicrosoftAzureLegacy\Storage\Table\Models\Filters\ConstantFilter;
+use MicrosoftAzureLegacy\Storage\Table\Models\Filters\Filter;
+use MicrosoftAzureLegacy\Storage\Table\Models\Filters\PropertyNameFilter;
+use MicrosoftAzureLegacy\Storage\Table\Models\Filters\QueryStringFilter;
+use MicrosoftAzureLegacy\Storage\Table\Models\Filters\UnaryFilter;
 
 class TableServiceFunctionalOptionsTest extends \PHPUnit\Framework\TestCase
 {

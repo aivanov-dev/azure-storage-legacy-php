@@ -15,22 +15,22 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Queue\Models
+ * @package   MicrosoftAzureLegacy\Storage\Queue\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Queue\Models;
+namespace MicrosoftAzureLegacy\Storage\Queue\Models;
 
-use MicrosoftAzure\Storage\Common\Internal\Utilities;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Utilities;
 
 /**
  * Holds results of listMessages wrapper.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Queue\Models
+ * @package   MicrosoftAzureLegacy\Storage\Queue\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

@@ -16,20 +16,20 @@
  *
  * @ignore
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Internal
+ * @package   MicrosoftAzureLegacy\Storage\Common\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Common\Internal;
+namespace MicrosoftAzureLegacy\Storage\Common\Internal;
 
-use MicrosoftAzure\Storage\Common\LocationMode;
-use MicrosoftAzure\Storage\Common\Models\ServiceOptions;
-use MicrosoftAzure\Storage\Common\Models\ServiceProperties;
-use MicrosoftAzure\Storage\Common\Models\GetServicePropertiesResult;
-use MicrosoftAzure\Storage\Common\Models\GetServiceStatsResult;
+use MicrosoftAzureLegacy\Storage\Common\LocationMode;
+use MicrosoftAzureLegacy\Storage\Common\Models\ServiceOptions;
+use MicrosoftAzureLegacy\Storage\Common\Models\ServiceProperties;
+use MicrosoftAzureLegacy\Storage\Common\Models\GetServicePropertiesResult;
+use MicrosoftAzureLegacy\Storage\Common\Models\GetServiceStatsResult;
 
 /**
  * Trait implementing common REST API for all the services, including the
@@ -38,7 +38,7 @@ use MicrosoftAzure\Storage\Common\Models\GetServiceStatsResult;
  * Get service stats
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Internal
+ * @package   MicrosoftAzureLegacy\Storage\Common\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
@@ -51,7 +51,7 @@ trait ServiceRestTrait
      *
      * @param ServiceOptions $options The optional parameters.
      *
-     * @return \MicrosoftAzure\Storage\Common\Models\GetServicePropertiesResult
+     * @return \MicrosoftAzureLegacy\Storage\Common\Models\GetServicePropertiesResult
      *
      * @see http://msdn.microsoft.com/en-us/library/windowsazure/hh452239.aspx
      */

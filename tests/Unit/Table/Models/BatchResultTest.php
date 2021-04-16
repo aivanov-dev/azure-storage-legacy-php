@@ -15,26 +15,26 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Table\Models
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Table\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Unit\Table\Models;
+namespace MicrosoftAzureLegacy\Storage\Tests\Unit\Table\Models;
 
-use MicrosoftAzure\Storage\Table\Models\BatchResult;
-use MicrosoftAzure\Storage\Table\Internal\MimeReaderWriter;
-use MicrosoftAzure\Storage\Table\Internal\JsonODataReaderWriter;
-use MicrosoftAzure\Storage\Common\Internal\Utilities;
-use MicrosoftAzure\Storage\Tests\Framework\TestResources;
+use MicrosoftAzureLegacy\Storage\Table\Models\BatchResult;
+use MicrosoftAzureLegacy\Storage\Table\Internal\MimeReaderWriter;
+use MicrosoftAzureLegacy\Storage\Table\Internal\JsonODataReaderWriter;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Utilities;
+use MicrosoftAzureLegacy\Storage\Tests\Framework\TestResources;
 
 /**
  * Unit tests for class BatchResult
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Table\Models
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Table\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

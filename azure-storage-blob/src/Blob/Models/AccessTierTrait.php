@@ -15,20 +15,20 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Models
+ * @package   MicrosoftAzureLegacy\Storage\Common\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2018 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Blob\Models;
+namespace MicrosoftAzureLegacy\Storage\Blob\Models;
 
 /**
  * Trait implementing setting and getting accessTier.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Blob\Models
+ * @package   MicrosoftAzureLegacy\Storage\Blob\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2018 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

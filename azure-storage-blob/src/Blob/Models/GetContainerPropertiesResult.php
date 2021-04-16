@@ -15,25 +15,25 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Blob\Models
+ * @package   MicrosoftAzureLegacy\Storage\Blob\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Blob\Models;
+namespace MicrosoftAzureLegacy\Storage\Blob\Models;
 
-use MicrosoftAzure\Storage\Common\Internal\MetadataTrait;
-use MicrosoftAzure\Storage\Blob\Internal\BlobResources as Resources;
-use MicrosoftAzure\Storage\Common\Internal\Utilities;
-use MicrosoftAzure\Storage\Common\Internal\Validate;
+use MicrosoftAzureLegacy\Storage\Common\Internal\MetadataTrait;
+use MicrosoftAzureLegacy\Storage\Blob\Internal\BlobResources as Resources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Utilities;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Validate;
 
 /**
  * Holds result of getContainerProperties and getContainerMetadata
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Blob\Models
+ * @package   MicrosoftAzureLegacy\Storage\Blob\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

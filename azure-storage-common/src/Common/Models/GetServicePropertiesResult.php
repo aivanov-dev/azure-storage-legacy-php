@@ -15,20 +15,20 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Models
+ * @package   MicrosoftAzureLegacy\Storage\Common\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Common\Models;
+namespace MicrosoftAzureLegacy\Storage\Common\Models;
 
 /**
  * Result from calling GetServiceProperties REST wrapper.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Models
+ * @package   MicrosoftAzureLegacy\Storage\Common\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
@@ -44,7 +44,7 @@ class GetServicePropertiesResult
      * @internal
      * @param array $parsedResponse XML response parsed into array.
      *
-     * @return \MicrosoftAzure\Storage\Common\Models\GetServicePropertiesResult
+     * @return \MicrosoftAzureLegacy\Storage\Common\Models\GetServicePropertiesResult
      */
     public static function create(array $parsedResponse)
     {
@@ -57,7 +57,7 @@ class GetServicePropertiesResult
     /**
      * Gets service properties object.
      *
-     * @return \MicrosoftAzure\Storage\Common\Models\ServiceProperties
+     * @return \MicrosoftAzureLegacy\Storage\Common\Models\ServiceProperties
      */
     public function getValue()
     {

@@ -15,24 +15,24 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Table\Models
+ * @package   MicrosoftAzureLegacy\Storage\Table\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Table\Models;
+namespace MicrosoftAzureLegacy\Storage\Table\Models;
 
-use MicrosoftAzure\Storage\Common\Internal\Validate;
-use MicrosoftAzure\Storage\Table\Internal\TableResources as Resources;
-use MicrosoftAzure\Storage\Common\Internal\ACLBase;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Validate;
+use MicrosoftAzureLegacy\Storage\Table\Internal\TableResources as Resources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\ACLBase;
 
 /**
  * Holds table ACL members.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Table\Models
+ * @package   MicrosoftAzureLegacy\Storage\Table\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

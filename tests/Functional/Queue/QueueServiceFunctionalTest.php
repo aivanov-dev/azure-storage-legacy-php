@@ -15,27 +15,27 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Functional\Queue
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Functional\Queue
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Functional\Queue;
+namespace MicrosoftAzureLegacy\Storage\Tests\Functional\Queue;
 
-use MicrosoftAzure\Storage\Queue\QueueRestProxy;
-use MicrosoftAzure\Storage\Tests\Framework\TestResources;
-use MicrosoftAzure\Storage\Common\Exceptions\ServiceException;
-use MicrosoftAzure\Storage\Queue\Models\CreateMessageOptions;
-use MicrosoftAzure\Storage\Queue\Models\CreateQueueOptions;
-use MicrosoftAzure\Storage\Queue\Models\ListMessagesOptions;
-use MicrosoftAzure\Storage\Queue\Models\ListQueuesOptions;
-use MicrosoftAzure\Storage\Queue\Models\PeekMessagesOptions;
-use MicrosoftAzure\Storage\Queue\Models\QueueServiceOptions;
-use MicrosoftAzure\Storage\Common\Middlewares\RetryMiddlewareFactory;
-use MicrosoftAzure\Storage\Common\Middlewares\HistoryMiddleware;
-use MicrosoftAzure\Storage\Common\LocationMode;
+use MicrosoftAzureLegacy\Storage\Queue\QueueRestProxy;
+use MicrosoftAzureLegacy\Storage\Tests\Framework\TestResources;
+use MicrosoftAzureLegacy\Storage\Common\Exceptions\ServiceException;
+use MicrosoftAzureLegacy\Storage\Queue\Models\CreateMessageOptions;
+use MicrosoftAzureLegacy\Storage\Queue\Models\CreateQueueOptions;
+use MicrosoftAzureLegacy\Storage\Queue\Models\ListMessagesOptions;
+use MicrosoftAzureLegacy\Storage\Queue\Models\ListQueuesOptions;
+use MicrosoftAzureLegacy\Storage\Queue\Models\PeekMessagesOptions;
+use MicrosoftAzureLegacy\Storage\Queue\Models\QueueServiceOptions;
+use MicrosoftAzureLegacy\Storage\Common\Middlewares\RetryMiddlewareFactory;
+use MicrosoftAzureLegacy\Storage\Common\Middlewares\HistoryMiddleware;
+use MicrosoftAzureLegacy\Storage\Common\LocationMode;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\Psr7\Response;

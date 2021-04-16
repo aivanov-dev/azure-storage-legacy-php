@@ -15,26 +15,26 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Functional\Table
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Functional\Table
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Functional\Table;
+namespace MicrosoftAzureLegacy\Storage\Tests\Functional\Table;
 
-use MicrosoftAzure\Storage\Tests\Functional\Table\Enums\MutatePivot;
-use MicrosoftAzure\Storage\Common\Internal\Utilities;
-use MicrosoftAzure\Storage\Table\Models\EdmType;
-use MicrosoftAzure\Storage\Table\Models\Entity;
-use MicrosoftAzure\Storage\Table\Models\Property;
-use MicrosoftAzure\Storage\Table\Models\Filters\BinaryFilter;
-use MicrosoftAzure\Storage\Table\Models\Filters\ConstantFilter;
-use MicrosoftAzure\Storage\Table\Models\Filters\Filter;
-use MicrosoftAzure\Storage\Table\Models\Filters\PropertyNameFilter;
-use MicrosoftAzure\Storage\Table\Models\Filters\QueryStringFilter;
-use MicrosoftAzure\Storage\Table\Models\Filters\UnaryFilter;
+use MicrosoftAzureLegacy\Storage\Tests\Functional\Table\Enums\MutatePivot;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Utilities;
+use MicrosoftAzureLegacy\Storage\Table\Models\EdmType;
+use MicrosoftAzureLegacy\Storage\Table\Models\Entity;
+use MicrosoftAzureLegacy\Storage\Table\Models\Property;
+use MicrosoftAzureLegacy\Storage\Table\Models\Filters\BinaryFilter;
+use MicrosoftAzureLegacy\Storage\Table\Models\Filters\ConstantFilter;
+use MicrosoftAzureLegacy\Storage\Table\Models\Filters\Filter;
+use MicrosoftAzureLegacy\Storage\Table\Models\Filters\PropertyNameFilter;
+use MicrosoftAzureLegacy\Storage\Table\Models\Filters\QueryStringFilter;
+use MicrosoftAzureLegacy\Storage\Table\Models\Filters\UnaryFilter;
 
 class TableServiceFunctionalTestUtils
 {

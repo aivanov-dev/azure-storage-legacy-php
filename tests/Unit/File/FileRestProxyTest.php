@@ -15,56 +15,56 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\File
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\File
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Unit\File;
+namespace MicrosoftAzureLegacy\Storage\Tests\Unit\File;
 
-use MicrosoftAzure\Storage\File\FileRestProxy;
-use MicrosoftAzure\Storage\File\Internal\IFile;
-use MicrosoftAzure\Storage\File\Models\CreateFileFromContentOptions;
-use MicrosoftAzure\Storage\Tests\Framework\VirtualFileSystem;
-use MicrosoftAzure\Storage\Tests\Framework\FileServiceRestProxyTestBase;
-use MicrosoftAzure\Storage\Tests\Framework\TestResources;
-use MicrosoftAzure\Storage\Common\Internal\Resources;
-use MicrosoftAzure\Storage\Common\Internal\Utilities;
-use MicrosoftAzure\Storage\Common\Exceptions\ServiceException;
-use MicrosoftAzure\Storage\Common\Models\ServiceProperties;
-use MicrosoftAzure\Storage\Common\Models\Range;
-use MicrosoftAzure\Storage\File\Models\AppendBlockOptions;
-use MicrosoftAzure\Storage\File\Models\ListSharesOptions;
-use MicrosoftAzure\Storage\File\Models\ListSharesResult;
-use MicrosoftAzure\Storage\File\Models\CreateShareOptions;
-use MicrosoftAzure\Storage\File\Models\GetSharePropertiesResult;
-use MicrosoftAzure\Storage\File\Models\ShareACL;
-use MicrosoftAzure\Storage\File\Models\ListDirectoriesAndFilesResult;
-use MicrosoftAzure\Storage\File\Models\ListDirectoriesAndFilesOptions;
-use MicrosoftAzure\Storage\File\Models\ListFileBlocksOptions;
-use MicrosoftAzure\Storage\File\Models\CreateFileOptions;
-use MicrosoftAzure\Storage\File\Models\CreateDirectoryOptions;
-use MicrosoftAzure\Storage\File\Models\SetFilePropertiesOptions;
-use MicrosoftAzure\Storage\File\Models\GetFileMetadataResult;
-use MicrosoftAzure\Storage\File\Models\SetFileMetadataResult;
-use MicrosoftAzure\Storage\File\Models\GetFileResult;
-use MicrosoftAzure\Storage\File\Models\FileType;
-use MicrosoftAzure\Storage\File\Models\PageRange;
-use MicrosoftAzure\Storage\File\Models\CreateFilePagesResult;
-use MicrosoftAzure\Storage\File\Models\BlockList;
-use MicrosoftAzure\Storage\File\Models\FileBlockType;
-use MicrosoftAzure\Storage\File\Models\GetFileOptions;
-use MicrosoftAzure\Storage\File\Models\Block;
-use MicrosoftAzure\Storage\File\Models\CopyFileOptions;
-use MicrosoftAzure\Storage\File\Models\FileProperties;
+use MicrosoftAzureLegacy\Storage\File\FileRestProxy;
+use MicrosoftAzureLegacy\Storage\File\Internal\IFile;
+use MicrosoftAzureLegacy\Storage\File\Models\CreateFileFromContentOptions;
+use MicrosoftAzureLegacy\Storage\Tests\Framework\VirtualFileSystem;
+use MicrosoftAzureLegacy\Storage\Tests\Framework\FileServiceRestProxyTestBase;
+use MicrosoftAzureLegacy\Storage\Tests\Framework\TestResources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Resources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Utilities;
+use MicrosoftAzureLegacy\Storage\Common\Exceptions\ServiceException;
+use MicrosoftAzureLegacy\Storage\Common\Models\ServiceProperties;
+use MicrosoftAzureLegacy\Storage\Common\Models\Range;
+use MicrosoftAzureLegacy\Storage\File\Models\AppendBlockOptions;
+use MicrosoftAzureLegacy\Storage\File\Models\ListSharesOptions;
+use MicrosoftAzureLegacy\Storage\File\Models\ListSharesResult;
+use MicrosoftAzureLegacy\Storage\File\Models\CreateShareOptions;
+use MicrosoftAzureLegacy\Storage\File\Models\GetSharePropertiesResult;
+use MicrosoftAzureLegacy\Storage\File\Models\ShareACL;
+use MicrosoftAzureLegacy\Storage\File\Models\ListDirectoriesAndFilesResult;
+use MicrosoftAzureLegacy\Storage\File\Models\ListDirectoriesAndFilesOptions;
+use MicrosoftAzureLegacy\Storage\File\Models\ListFileBlocksOptions;
+use MicrosoftAzureLegacy\Storage\File\Models\CreateFileOptions;
+use MicrosoftAzureLegacy\Storage\File\Models\CreateDirectoryOptions;
+use MicrosoftAzureLegacy\Storage\File\Models\SetFilePropertiesOptions;
+use MicrosoftAzureLegacy\Storage\File\Models\GetFileMetadataResult;
+use MicrosoftAzureLegacy\Storage\File\Models\SetFileMetadataResult;
+use MicrosoftAzureLegacy\Storage\File\Models\GetFileResult;
+use MicrosoftAzureLegacy\Storage\File\Models\FileType;
+use MicrosoftAzureLegacy\Storage\File\Models\PageRange;
+use MicrosoftAzureLegacy\Storage\File\Models\CreateFilePagesResult;
+use MicrosoftAzureLegacy\Storage\File\Models\BlockList;
+use MicrosoftAzureLegacy\Storage\File\Models\FileBlockType;
+use MicrosoftAzureLegacy\Storage\File\Models\GetFileOptions;
+use MicrosoftAzureLegacy\Storage\File\Models\Block;
+use MicrosoftAzureLegacy\Storage\File\Models\CopyFileOptions;
+use MicrosoftAzureLegacy\Storage\File\Models\FileProperties;
 
 /**
  * Unit tests for class FileRestProxy
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\File
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\File
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
@@ -127,7 +127,7 @@ class FileRestProxyTest extends FileServiceRestProxyTestBase
     }
 
     /**
-     * @expectedException MicrosoftAzure\Storage\Common\Exceptions\ServiceException
+     * @expectedException MicrosoftAzureLegacy\Storage\Common\Exceptions\ServiceException
      * @expectedExceptionMessage 400
      */
     public function testGetSetShareMetadataAndProperties()
@@ -752,7 +752,7 @@ class FileRestProxyTest extends FileServiceRestProxyTestBase
     }
 
     /**
-     * @expectedException MicrosoftAzure\Storage\Common\Exceptions\ServiceException
+     * @expectedException MicrosoftAzureLegacy\Storage\Common\Exceptions\ServiceException
      * @expectedExceptionMessage There is currently no pending copy operation
      */
     public function testAbortCopy()

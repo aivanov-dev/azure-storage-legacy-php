@@ -15,21 +15,21 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Table\Internal
+ * @package   MicrosoftAzureLegacy\Storage\Table\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Table\Internal;
+namespace MicrosoftAzureLegacy\Storage\Table\Internal;
 
 /**
  * Interface for MIME reading and writing.
  *
  * @ignore
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Table\Internal
+ * @package   MicrosoftAzureLegacy\Storage\Table\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

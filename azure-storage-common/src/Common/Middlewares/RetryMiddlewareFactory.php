@@ -15,17 +15,17 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Middlewares
+ * @package   MicrosoftAzureLegacy\Storage\Common\Middlewares
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Common\Middlewares;
+namespace MicrosoftAzureLegacy\Storage\Common\Middlewares;
 
-use MicrosoftAzure\Storage\Common\Internal\Resources;
-use MicrosoftAzure\Storage\Common\Internal\Validate;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Resources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Validate;
 use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Exception\RequestException;
 
@@ -34,7 +34,7 @@ use GuzzleHttp\Exception\RequestException;
  * HTTP clients to handle retry policy.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Middlewares
+ * @package   MicrosoftAzureLegacy\Storage\Common\Middlewares
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

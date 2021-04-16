@@ -15,31 +15,31 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Framework
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Framework
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Framework;
+namespace MicrosoftAzureLegacy\Storage\Tests\Framework;
 
-use MicrosoftAzure\Storage\Blob\BlobRestProxy;
-use MicrosoftAzure\Storage\Common\Internal\Serialization\XmlSerializer;
-use MicrosoftAzure\Storage\Common\Internal\Resources;
-use MicrosoftAzure\Storage\Common\Internal\StorageServiceSettings;
-use MicrosoftAzure\Storage\Common\SharedAccessSignatureHelper;
-use MicrosoftAzure\Storage\File\FileRestProxy;
-use MicrosoftAzure\Storage\Queue\QueueRestProxy;
-use MicrosoftAzure\Storage\Table\TableRestProxy;
-use MicrosoftAzure\Storage\Tests\Framework\TestResources;
-use MicrosoftAzure\Storage\Common\Exceptions\ServiceException;
+use MicrosoftAzureLegacy\Storage\Blob\BlobRestProxy;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Serialization\XmlSerializer;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Resources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\StorageServiceSettings;
+use MicrosoftAzureLegacy\Storage\Common\SharedAccessSignatureHelper;
+use MicrosoftAzureLegacy\Storage\File\FileRestProxy;
+use MicrosoftAzureLegacy\Storage\Queue\QueueRestProxy;
+use MicrosoftAzureLegacy\Storage\Table\TableRestProxy;
+use MicrosoftAzureLegacy\Storage\Tests\Framework\TestResources;
+use MicrosoftAzureLegacy\Storage\Common\Exceptions\ServiceException;
 
 /**
  * Test base for SAS functional tests.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Framework
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Framework
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

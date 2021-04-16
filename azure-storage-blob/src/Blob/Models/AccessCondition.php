@@ -15,25 +15,25 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Blob\Models
+ * @package   MicrosoftAzureLegacy\Storage\Blob\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Blob\Models;
+namespace MicrosoftAzureLegacy\Storage\Blob\Models;
 
-use MicrosoftAzure\Storage\Blob\Internal\BlobResources as Resources;
-use MicrosoftAzure\Storage\Common\Internal\Validate;
-use MicrosoftAzure\Storage\Common\Internal\WindowsAzureUtilities;
+use MicrosoftAzureLegacy\Storage\Blob\Internal\BlobResources as Resources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Validate;
+use MicrosoftAzureLegacy\Storage\Common\Internal\WindowsAzureUtilities;
 
 /**
  * Represents a set of access conditions to be used for operations against the
  * storage services.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Blob\Models
+ * @package   MicrosoftAzureLegacy\Storage\Blob\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
@@ -61,7 +61,7 @@ class AccessCondition
     /**
      * Specifies that no access condition is set.
      *
-     * @return \MicrosoftAzure\Storage\Blob\Models\AccessCondition
+     * @return \MicrosoftAzureLegacy\Storage\Blob\Models\AccessCondition
      */
     public static function none()
     {
@@ -83,7 +83,7 @@ class AccessCondition
      *
      * @param string $etag a string that represents the ETag value to check.
      *
-     * @return \MicrosoftAzure\Storage\Blob\Models\AccessCondition
+     * @return \MicrosoftAzureLegacy\Storage\Blob\Models\AccessCondition
      */
     public static function ifMatch($etag)
     {
@@ -106,7 +106,7 @@ class AccessCondition
      * @param \DateTime $lastModified date that represents the last-modified
      * time to check for the resource.
      *
-     * @return \MicrosoftAzure\Storage\Blob\Models\AccessCondition
+     * @return \MicrosoftAzureLegacy\Storage\Blob\Models\AccessCondition
      */
     public static function ifModifiedSince(\DateTime $lastModified)
     {
@@ -132,7 +132,7 @@ class AccessCondition
      *
      * @param string $etag string that represents the ETag value to check.
      *
-     * @return \MicrosoftAzure\Storage\Blob\Models\AccessCondition
+     * @return \MicrosoftAzureLegacy\Storage\Blob\Models\AccessCondition
      */
     public static function ifNoneMatch($etag)
     {
@@ -155,7 +155,7 @@ class AccessCondition
      * @param \DateTime $lastModified date that represents the last-modified
      * time to check for the resource.
      *
-     * @return \MicrosoftAzure\Storage\Blob\Models\AccessCondition
+     * @return \MicrosoftAzureLegacy\Storage\Blob\Models\AccessCondition
      */
     public static function ifNotModifiedSince(\DateTime $lastModified)
     {
@@ -181,7 +181,7 @@ class AccessCondition
      *
      * @param int $appendPosition int that represents the append position
      *
-     * @return \MicrosoftAzure\Storage\Blob\Models\AccessCondition
+     * @return \MicrosoftAzureLegacy\Storage\Blob\Models\AccessCondition
      */
     public static function appendPosition($appendPosition)
     {
@@ -205,7 +205,7 @@ class AccessCondition
      *
      * @param int $maxBlobSize int that represents the max blob size
      *
-     * @return \MicrosoftAzure\Storage\Blob\Models\AccessCondition
+     * @return \MicrosoftAzureLegacy\Storage\Blob\Models\AccessCondition
      */
     public static function maxBlobSize($maxBlobSize)
     {
@@ -227,7 +227,7 @@ class AccessCondition
      *
      * @param int $sequenceNumber int that represents the sequence number value to check.
      *
-     * @return \MicrosoftAzure\Storage\Blob\Models\AccessCondition
+     * @return \MicrosoftAzureLegacy\Storage\Blob\Models\AccessCondition
      */
     public static function ifSequenceNumberLessThan($sequenceNumber)
     {
@@ -249,7 +249,7 @@ class AccessCondition
      *
      * @param int $sequenceNumber int that represents the sequence number value to check.
      *
-     * @return \MicrosoftAzure\Storage\Blob\Models\AccessCondition
+     * @return \MicrosoftAzureLegacy\Storage\Blob\Models\AccessCondition
      */
     public static function ifSequenceNumberEqual($sequenceNumber)
     {
@@ -271,7 +271,7 @@ class AccessCondition
      *
      * @param int $sequenceNumber int that represents the sequence number value to check.
      *
-     * @return \MicrosoftAzure\Storage\Blob\Models\AccessCondition
+     * @return \MicrosoftAzureLegacy\Storage\Blob\Models\AccessCondition
      */
     public static function ifSequenceNumberLessThanOrEqual($sequenceNumber)
     {

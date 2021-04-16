@@ -13,7 +13,7 @@
  * limitations under the License.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Samples
+ * @package   MicrosoftAzureLegacy\Storage\Samples
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2019 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
@@ -22,10 +22,10 @@
 
 require_once "./vendor/autoload.php";
 
-use MicrosoftAzure\Storage\Blob\BlobRestProxy;
-use MicrosoftAzure\Storage\File\FileRestProxy;
-use MicrosoftAzure\Storage\Table\TableRestProxy;
-use MicrosoftAzure\Storage\Queue\QueueRestProxy;
+use MicrosoftAzureLegacy\Storage\Blob\BlobRestProxy;
+use MicrosoftAzureLegacy\Storage\File\FileRestProxy;
+use MicrosoftAzureLegacy\Storage\Table\TableRestProxy;
+use MicrosoftAzureLegacy\Storage\Queue\QueueRestProxy;
 
 $connectionString = \getenv("AZURE_STORAGE_CONNECTION_STRING");
 $blobClient = BlobRestProxy::createBlobService($connectionString);

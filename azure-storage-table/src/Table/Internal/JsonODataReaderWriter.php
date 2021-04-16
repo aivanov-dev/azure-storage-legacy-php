@@ -15,25 +15,25 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Table\Internal
+ * @package   MicrosoftAzureLegacy\Storage\Table\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Table\Internal;
+namespace MicrosoftAzureLegacy\Storage\Table\Internal;
 
-use MicrosoftAzure\Storage\Table\Internal\TableResources as Resources;
-use MicrosoftAzure\Storage\Table\Models\EdmType;
-use MicrosoftAzure\Storage\Table\Models\Entity;
+use MicrosoftAzureLegacy\Storage\Table\Internal\TableResources as Resources;
+use MicrosoftAzureLegacy\Storage\Table\Models\EdmType;
+use MicrosoftAzureLegacy\Storage\Table\Models\Entity;
 
 /**
  * Serializes and unserializes results from table wrapper calls
  *
  * @ignore
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Table\Internal
+ * @package   MicrosoftAzureLegacy\Storage\Table\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

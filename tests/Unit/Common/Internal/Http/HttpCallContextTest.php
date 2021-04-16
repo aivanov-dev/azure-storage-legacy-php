@@ -15,22 +15,22 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Common\Internal\Http
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Internal\Http
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Unit\Common\Internal\Http;
+namespace MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Internal\Http;
 
-use MicrosoftAzure\Storage\Common\Internal\Http\HttpCallContext;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Http\HttpCallContext;
 
 /**
  * Unit tests for class HttpCallContext
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Common\Internal\Http
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Internal\Http
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

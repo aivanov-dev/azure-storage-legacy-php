@@ -15,17 +15,17 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Internal\Serialization
+ * @package   MicrosoftAzureLegacy\Storage\Common\Internal\Serialization
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Common\Internal\Serialization;
+namespace MicrosoftAzureLegacy\Storage\Common\Internal\Serialization;
 
-use MicrosoftAzure\Storage\Common\Internal\Validate;
-use MicrosoftAzure\Storage\Common\Internal\Resources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Validate;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Resources;
 use GuzzleHttp\Exception\RequestException;
 
 /**
@@ -33,7 +33,7 @@ use GuzzleHttp\Exception\RequestException;
  *
  * @ignore
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Internal\Serialization
+ * @package   MicrosoftAzureLegacy\Storage\Common\Internal\Serialization
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

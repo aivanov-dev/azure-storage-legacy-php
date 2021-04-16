@@ -15,36 +15,36 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Functional\Blob
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Functional\Blob
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Functional\Blob;
+namespace MicrosoftAzureLegacy\Storage\Tests\Functional\Blob;
 
-use MicrosoftAzure\Storage\Blob\Models\CreateBlockBlobOptions;
-use MicrosoftAzure\Storage\Blob\Models\CreatePageBlobOptions;
-use MicrosoftAzure\Storage\Tests\Framework\TestResources;
-use MicrosoftAzure\Storage\Blob\Models\AccessCondition;
-use MicrosoftAzure\Storage\Blob\Models\BlobBlockType;
-use MicrosoftAzure\Storage\Blob\Models\Block;
-use MicrosoftAzure\Storage\Blob\Models\BlockList;
-use MicrosoftAzure\Storage\Blob\Models\ContainerACL;
-use MicrosoftAzure\Storage\Blob\Models\CreateBlobOptions;
-use MicrosoftAzure\Storage\Blob\Models\CreateBlobSnapshotOptions;
-use MicrosoftAzure\Storage\Blob\Models\CreateContainerOptions;
-use MicrosoftAzure\Storage\Blob\Models\GetBlobOptions;
-use MicrosoftAzure\Storage\Blob\Models\GetBlobPropertiesOptions;
-use MicrosoftAzure\Storage\Blob\Models\ListBlobBlocksOptions;
-use MicrosoftAzure\Storage\Blob\Models\ListBlobsOptions;
-use MicrosoftAzure\Storage\Blob\Models\ListContainersOptions;
-use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
-use MicrosoftAzure\Storage\Blob\Models\SetBlobPropertiesOptions;
-use MicrosoftAzure\Storage\Common\Models\Range;
-use MicrosoftAzure\Storage\Common\Exceptions\ServiceException;
-use MicrosoftAzure\Storage\Common\Internal\Utilities;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CreateBlockBlobOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CreatePageBlobOptions;
+use MicrosoftAzureLegacy\Storage\Tests\Framework\TestResources;
+use MicrosoftAzureLegacy\Storage\Blob\Models\AccessCondition;
+use MicrosoftAzureLegacy\Storage\Blob\Models\BlobBlockType;
+use MicrosoftAzureLegacy\Storage\Blob\Models\Block;
+use MicrosoftAzureLegacy\Storage\Blob\Models\BlockList;
+use MicrosoftAzureLegacy\Storage\Blob\Models\ContainerACL;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CreateBlobOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CreateBlobSnapshotOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CreateContainerOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\GetBlobOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\GetBlobPropertiesOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\ListBlobBlocksOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\ListBlobsOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\ListContainersOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\PublicAccessType;
+use MicrosoftAzureLegacy\Storage\Blob\Models\SetBlobPropertiesOptions;
+use MicrosoftAzureLegacy\Storage\Common\Models\Range;
+use MicrosoftAzureLegacy\Storage\Common\Exceptions\ServiceException;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Utilities;
 
 class BlobServiceIntegrationTest extends IntegrationTestBase
 {

@@ -15,17 +15,17 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Functional\File
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Functional\File
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Functional\File;
+namespace MicrosoftAzureLegacy\Storage\Tests\Functional\File;
 
-use MicrosoftAzure\Storage\Common\Exceptions\ServiceException;
-use MicrosoftAzure\Storage\Common\Internal\StorageServiceSettings;
+use MicrosoftAzureLegacy\Storage\Common\Exceptions\ServiceException;
+use MicrosoftAzureLegacy\Storage\Common\Internal\StorageServiceSettings;
 
 class FunctionalTestBase extends IntegrationTestBase
 {

@@ -15,20 +15,20 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Table\Models\Filters
+ * @package   MicrosoftAzureLegacy\Storage\Table\Models\Filters
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Table\Models\Filters;
+namespace MicrosoftAzureLegacy\Storage\Table\Models\Filters;
 
 /**
  * Constant filter
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Table\Models\Filters
+ * @package   MicrosoftAzureLegacy\Storage\Table\Models\Filters
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

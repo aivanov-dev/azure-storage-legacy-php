@@ -15,22 +15,22 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\File\Models
+ * @package   MicrosoftAzureLegacy\Storage\File\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\File\Models;
+namespace MicrosoftAzureLegacy\Storage\File\Models;
 
-use MicrosoftAzure\Storage\Common\Internal\Validate;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Validate;
 
 /**
  * Optional parameters for createFile.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\File\Models
+ * @package   MicrosoftAzureLegacy\Storage\File\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

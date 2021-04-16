@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "MicrosoftAzure\\Storage\\Queue\\": "src/Queue"
+            "MicrosoftAzureLegacy\\Storage\\Queue\\": "src/Queue"
         }
     }
 }

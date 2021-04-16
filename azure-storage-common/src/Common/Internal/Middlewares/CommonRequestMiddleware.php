@@ -15,18 +15,18 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Internal
+ * @package   MicrosoftAzureLegacy\Storage\Common\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Common\Internal\Middlewares;
+namespace MicrosoftAzureLegacy\Storage\Common\Internal\Middlewares;
 
-use MicrosoftAzure\Storage\Common\Middlewares\MiddlewareBase;
-use MicrosoftAzure\Storage\Common\Internal\Authentication\IAuthScheme;
-use MicrosoftAzure\Storage\Common\Internal\Resources;
+use MicrosoftAzureLegacy\Storage\Common\Middlewares\MiddlewareBase;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Authentication\IAuthScheme;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Resources;
 use Psr\Http\Message\RequestInterface;
 
 /**
@@ -36,7 +36,7 @@ use Psr\Http\Message\RequestInterface;
  *
  * @ignore
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Internal
+ * @package   MicrosoftAzureLegacy\Storage\Common\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

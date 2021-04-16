@@ -15,23 +15,23 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\File\Models
+ * @package   MicrosoftAzureLegacy\Storage\File\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\File\Models;
+namespace MicrosoftAzureLegacy\Storage\File\Models;
 
-use MicrosoftAzure\Storage\Common\Models\AccessPolicy;
-use MicrosoftAzure\Storage\File\Internal\FileResources;
+use MicrosoftAzureLegacy\Storage\Common\Models\AccessPolicy;
+use MicrosoftAzureLegacy\Storage\File\Internal\FileResources;
 
 /**
  * Holds access policy elements
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\File\Models
+ * @package   MicrosoftAzureLegacy\Storage\File\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

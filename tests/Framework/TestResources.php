@@ -15,31 +15,31 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Framework
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Framework
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Framework;
+namespace MicrosoftAzureLegacy\Storage\Tests\Framework;
 
-use MicrosoftAzure\Storage\File\Internal\FileResources;
-use MicrosoftAzure\Storage\Queue\Internal\QueueResources;
-use MicrosoftAzure\Storage\Table\Models\EdmType;
-use MicrosoftAzure\Storage\Table\Models\Entity;
-use MicrosoftAzure\Storage\Common\Internal\Utilities;
-use MicrosoftAzure\Storage\Common\Internal\Resources;
-use MicrosoftAzure\Storage\Common\Internal\Http\HttpCallContext;
-use MicrosoftAzure\Storage\Table\Models\BatchOperation;
-use MicrosoftAzure\Storage\Table\Models\BatchOperationType;
-use MicrosoftAzure\Storage\Table\Models\UpdateEntityResult;
+use MicrosoftAzureLegacy\Storage\File\Internal\FileResources;
+use MicrosoftAzureLegacy\Storage\Queue\Internal\QueueResources;
+use MicrosoftAzureLegacy\Storage\Table\Models\EdmType;
+use MicrosoftAzureLegacy\Storage\Table\Models\Entity;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Utilities;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Resources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Http\HttpCallContext;
+use MicrosoftAzureLegacy\Storage\Table\Models\BatchOperation;
+use MicrosoftAzureLegacy\Storage\Table\Models\BatchOperationType;
+use MicrosoftAzureLegacy\Storage\Table\Models\UpdateEntityResult;
 use GuzzleHttp\Psr7\Response;
 
 /**
  * Resources for testing framework.
  *
- * @package    MicrosoftAzure\Storage\Tests\Framework
+ * @package    MicrosoftAzureLegacy\Storage\Tests\Framework
  * @author     Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright  2016 Microsoft Corporation
  * @license    https://github.com/azure/azure-storage-php/LICENSE

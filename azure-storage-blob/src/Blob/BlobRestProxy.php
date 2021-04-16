@@ -15,79 +15,79 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Blob
+ * @package   MicrosoftAzureLegacy\Storage\Blob
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Blob;
+namespace MicrosoftAzureLegacy\Storage\Blob;
 
 use GuzzleHttp\Psr7;
-use MicrosoftAzure\Storage\Blob\Internal\IBlob;
-use MicrosoftAzure\Storage\Blob\Internal\BlobResources as Resources;
-use MicrosoftAzure\Storage\Blob\Models\AppendBlockOptions;
-use MicrosoftAzure\Storage\Blob\Models\AppendBlockResult;
-use MicrosoftAzure\Storage\Blob\Models\BlobServiceOptions;
-use MicrosoftAzure\Storage\Blob\Models\BlobType;
-use MicrosoftAzure\Storage\Blob\Models\Block;
-use MicrosoftAzure\Storage\Blob\Models\BlockList;
-use MicrosoftAzure\Storage\Blob\Models\BreakLeaseResult;
-use MicrosoftAzure\Storage\Blob\Models\CommitBlobBlocksOptions;
-use MicrosoftAzure\Storage\Blob\Models\CopyBlobFromURLOptions;
-use MicrosoftAzure\Storage\Blob\Models\CopyBlobOptions;
-use MicrosoftAzure\Storage\Blob\Models\CopyBlobResult;
-use MicrosoftAzure\Storage\Blob\Models\CreateBlobBlockOptions;
-use MicrosoftAzure\Storage\Blob\Models\CreateBlobOptions;
-use MicrosoftAzure\Storage\Blob\Models\CreateBlobPagesOptions;
-use MicrosoftAzure\Storage\Blob\Models\CreateBlobPagesResult;
-use MicrosoftAzure\Storage\Blob\Models\CreateBlobSnapshotOptions;
-use MicrosoftAzure\Storage\Blob\Models\CreateBlobSnapshotResult;
-use MicrosoftAzure\Storage\Blob\Models\CreateContainerOptions;
-use MicrosoftAzure\Storage\Blob\Models\CreatePageBlobOptions;
-use MicrosoftAzure\Storage\Blob\Models\UndeleteBlobOptions;
-use MicrosoftAzure\Storage\Blob\Models\DeleteBlobOptions;
-use MicrosoftAzure\Storage\Blob\Models\GetBlobMetadataOptions;
-use MicrosoftAzure\Storage\Blob\Models\GetBlobMetadataResult;
-use MicrosoftAzure\Storage\Blob\Models\GetBlobOptions;
-use MicrosoftAzure\Storage\Blob\Models\GetBlobPropertiesOptions;
-use MicrosoftAzure\Storage\Blob\Models\GetBlobPropertiesResult;
-use MicrosoftAzure\Storage\Blob\Models\GetBlobResult;
-use MicrosoftAzure\Storage\Blob\Models\GetContainerACLResult;
-use MicrosoftAzure\Storage\Blob\Models\GetContainerPropertiesResult;
-use MicrosoftAzure\Storage\Blob\Models\LeaseMode;
-use MicrosoftAzure\Storage\Blob\Models\LeaseResult;
-use MicrosoftAzure\Storage\Blob\Models\ListBlobBlocksOptions;
-use MicrosoftAzure\Storage\Blob\Models\ListBlobBlocksResult;
-use MicrosoftAzure\Storage\Blob\Models\ListBlobsOptions;
-use MicrosoftAzure\Storage\Blob\Models\ListBlobsResult;
-use MicrosoftAzure\Storage\Blob\Models\ListContainersOptions;
-use MicrosoftAzure\Storage\Blob\Models\ListContainersResult;
-use MicrosoftAzure\Storage\Blob\Models\ListPageBlobRangesDiffResult;
-use MicrosoftAzure\Storage\Blob\Models\ListPageBlobRangesOptions;
-use MicrosoftAzure\Storage\Blob\Models\ListPageBlobRangesResult;
-use MicrosoftAzure\Storage\Blob\Models\PageWriteOption;
-use MicrosoftAzure\Storage\Blob\Models\PutBlobResult;
-use MicrosoftAzure\Storage\Blob\Models\PutBlockResult;
-use MicrosoftAzure\Storage\Blob\Models\SetBlobMetadataResult;
-use MicrosoftAzure\Storage\Blob\Models\SetBlobPropertiesOptions;
-use MicrosoftAzure\Storage\Blob\Models\SetBlobPropertiesResult;
-use MicrosoftAzure\Storage\Blob\Models\SetBlobTierOptions;
-use MicrosoftAzure\Storage\Common\Internal\Authentication\SharedAccessSignatureAuthScheme;
-use MicrosoftAzure\Storage\Common\Internal\Authentication\SharedKeyAuthScheme;
-use MicrosoftAzure\Storage\Common\Internal\Authentication\TokenAuthScheme;
-use MicrosoftAzure\Storage\Common\Internal\Http\HttpFormatter;
-use MicrosoftAzure\Storage\Common\Internal\Middlewares\CommonRequestMiddleware;
-use MicrosoftAzure\Storage\Common\Internal\Serialization\XmlSerializer;
-use MicrosoftAzure\Storage\Common\Internal\ServiceRestProxy;
-use MicrosoftAzure\Storage\Common\Internal\ServiceRestTrait;
-use MicrosoftAzure\Storage\Common\Internal\StorageServiceSettings;
-use MicrosoftAzure\Storage\Common\Internal\Utilities;
-use MicrosoftAzure\Storage\Common\Internal\Validate;
-use MicrosoftAzure\Storage\Common\LocationMode;
-use MicrosoftAzure\Storage\Common\Models\Range;
-use MicrosoftAzure\Storage\Common\SharedAccessSignatureHelper;
+use MicrosoftAzureLegacy\Storage\Blob\Internal\IBlob;
+use MicrosoftAzureLegacy\Storage\Blob\Internal\BlobResources as Resources;
+use MicrosoftAzureLegacy\Storage\Blob\Models\AppendBlockOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\AppendBlockResult;
+use MicrosoftAzureLegacy\Storage\Blob\Models\BlobServiceOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\BlobType;
+use MicrosoftAzureLegacy\Storage\Blob\Models\Block;
+use MicrosoftAzureLegacy\Storage\Blob\Models\BlockList;
+use MicrosoftAzureLegacy\Storage\Blob\Models\BreakLeaseResult;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CommitBlobBlocksOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CopyBlobFromURLOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CopyBlobOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CopyBlobResult;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CreateBlobBlockOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CreateBlobOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CreateBlobPagesOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CreateBlobPagesResult;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CreateBlobSnapshotOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CreateBlobSnapshotResult;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CreateContainerOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CreatePageBlobOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\UndeleteBlobOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\DeleteBlobOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\GetBlobMetadataOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\GetBlobMetadataResult;
+use MicrosoftAzureLegacy\Storage\Blob\Models\GetBlobOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\GetBlobPropertiesOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\GetBlobPropertiesResult;
+use MicrosoftAzureLegacy\Storage\Blob\Models\GetBlobResult;
+use MicrosoftAzureLegacy\Storage\Blob\Models\GetContainerACLResult;
+use MicrosoftAzureLegacy\Storage\Blob\Models\GetContainerPropertiesResult;
+use MicrosoftAzureLegacy\Storage\Blob\Models\LeaseMode;
+use MicrosoftAzureLegacy\Storage\Blob\Models\LeaseResult;
+use MicrosoftAzureLegacy\Storage\Blob\Models\ListBlobBlocksOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\ListBlobBlocksResult;
+use MicrosoftAzureLegacy\Storage\Blob\Models\ListBlobsOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\ListBlobsResult;
+use MicrosoftAzureLegacy\Storage\Blob\Models\ListContainersOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\ListContainersResult;
+use MicrosoftAzureLegacy\Storage\Blob\Models\ListPageBlobRangesDiffResult;
+use MicrosoftAzureLegacy\Storage\Blob\Models\ListPageBlobRangesOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\ListPageBlobRangesResult;
+use MicrosoftAzureLegacy\Storage\Blob\Models\PageWriteOption;
+use MicrosoftAzureLegacy\Storage\Blob\Models\PutBlobResult;
+use MicrosoftAzureLegacy\Storage\Blob\Models\PutBlockResult;
+use MicrosoftAzureLegacy\Storage\Blob\Models\SetBlobMetadataResult;
+use MicrosoftAzureLegacy\Storage\Blob\Models\SetBlobPropertiesOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\SetBlobPropertiesResult;
+use MicrosoftAzureLegacy\Storage\Blob\Models\SetBlobTierOptions;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Authentication\SharedAccessSignatureAuthScheme;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Authentication\SharedKeyAuthScheme;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Authentication\TokenAuthScheme;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Http\HttpFormatter;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Middlewares\CommonRequestMiddleware;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Serialization\XmlSerializer;
+use MicrosoftAzureLegacy\Storage\Common\Internal\ServiceRestProxy;
+use MicrosoftAzureLegacy\Storage\Common\Internal\ServiceRestTrait;
+use MicrosoftAzureLegacy\Storage\Common\Internal\StorageServiceSettings;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Utilities;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Validate;
+use MicrosoftAzureLegacy\Storage\Common\LocationMode;
+use MicrosoftAzureLegacy\Storage\Common\Models\Range;
+use MicrosoftAzureLegacy\Storage\Common\SharedAccessSignatureHelper;
 use Psr\Http\Message\StreamInterface;
 
 /**
@@ -95,7 +95,7 @@ use Psr\Http\Message\StreamInterface;
  * service layer.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Blob
+ * @package   MicrosoftAzureLegacy\Storage\Blob
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
@@ -115,7 +115,7 @@ class BlobRestProxy extends ServiceRestProxy implements IBlob
      * - http: (array) the underlying guzzle options. refer to
      *   http://docs.guzzlephp.org/en/latest/request-options.html for detailed available options
      * - middlewares: (mixed) the middleware should be either an instance of a sub-class that
-     *   implements {@see MicrosoftAzure\Storage\Common\Middlewares\IMiddleware}, or a
+     *   implements {@see MicrosoftAzureLegacy\Storage\Common\Middlewares\IMiddleware}, or a
      *   `callable` that follows the Guzzle middleware implementation convention
      *
      * Please refer to
@@ -180,7 +180,7 @@ class BlobRestProxy extends ServiceRestProxy implements IBlob
      * - http: (array) the underlying guzzle options. refer to
      *   http://docs.guzzlephp.org/en/latest/request-options.html for detailed available options
      * - middlewares: (mixed) the middleware should be either an instance of a sub-class that
-     *   implements {@see MicrosoftAzure\Storage\Common\Middlewares\IMiddleware}, or a
+     *   implements {@see MicrosoftAzureLegacy\Storage\Common\Middlewares\IMiddleware}, or a
      *   `callable` that follows the Guzzle middleware implementation convention
      *
      * Please refer to

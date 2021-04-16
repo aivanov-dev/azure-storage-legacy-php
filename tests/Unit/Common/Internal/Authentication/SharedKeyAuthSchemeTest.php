@@ -15,26 +15,26 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Common\Internal\Authentication
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Internal\Authentication
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Unit\Common\Internal\Authentication;
+namespace MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Internal\Authentication;
 
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Uri;
-use MicrosoftAzure\Storage\Tests\Mock\Common\Internal\Authentication\SharedKeyAuthSchemeMock;
-use MicrosoftAzure\Storage\Common\Internal\Resources;
-use MicrosoftAzure\Storage\Common\Internal\ServiceRestProxy;
-use MicrosoftAzure\Storage\Tests\Framework\TestResources;
+use MicrosoftAzureLegacy\Storage\Tests\Mock\Common\Internal\Authentication\SharedKeyAuthSchemeMock;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Resources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\ServiceRestProxy;
+use MicrosoftAzureLegacy\Storage\Tests\Framework\TestResources;
 
 /**
  * Unit tests for SharedKeyAuthScheme class.
  *
- * @package    MicrosoftAzure\Storage\Tests\Unit\Common\Internal\Authentication
+ * @package    MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Internal\Authentication
  * @author     Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright  2016 Microsoft Corporation
  * @license    https://github.com/azure/azure-storage-php/LICENSE

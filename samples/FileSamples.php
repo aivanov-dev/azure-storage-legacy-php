@@ -13,28 +13,28 @@
  * limitations under the License.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Samples
+ * @package   MicrosoftAzureLegacy\Storage\Samples
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Samples;
+namespace MicrosoftAzureLegacy\Storage\Samples;
 
 require_once "../vendor/autoload.php";
 
-use MicrosoftAzure\Storage\Common\Exceptions\ServiceException;
-use MicrosoftAzure\Storage\Common\Internal\Resources;
-use MicrosoftAzure\Storage\Common\Internal\StorageServiceSettings;
-use MicrosoftAzure\Storage\Common\Models\Range;
-use MicrosoftAzure\Storage\Common\Models\Metrics;
-use MicrosoftAzure\Storage\Common\Models\RetentionPolicy;
-use MicrosoftAzure\Storage\Common\Models\ServiceProperties;
-use MicrosoftAzure\Storage\File\FileRestProxy;
-use MicrosoftAzure\Storage\File\FileSharedAccessSignatureHelper;
-use MicrosoftAzure\Storage\File\Models\CreateShareOptions;
-use MicrosoftAzure\Storage\File\Models\ListSharesOptions;
+use MicrosoftAzureLegacy\Storage\Common\Exceptions\ServiceException;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Resources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\StorageServiceSettings;
+use MicrosoftAzureLegacy\Storage\Common\Models\Range;
+use MicrosoftAzureLegacy\Storage\Common\Models\Metrics;
+use MicrosoftAzureLegacy\Storage\Common\Models\RetentionPolicy;
+use MicrosoftAzureLegacy\Storage\Common\Models\ServiceProperties;
+use MicrosoftAzureLegacy\Storage\File\FileRestProxy;
+use MicrosoftAzureLegacy\Storage\File\FileSharedAccessSignatureHelper;
+use MicrosoftAzureLegacy\Storage\File\Models\CreateShareOptions;
+use MicrosoftAzureLegacy\Storage\File\Models\ListSharesOptions;
 
 $connectionString = 'DefaultEndpointsProtocol=https;AccountName=<yourAccount>;AccountKey=<yourKey>';
 $fileClient = FileRestProxy::createFileService($connectionString);

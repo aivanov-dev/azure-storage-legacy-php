@@ -15,22 +15,22 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Models
+ * @package   MicrosoftAzureLegacy\Storage\Common\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Common\Models;
+namespace MicrosoftAzureLegacy\Storage\Common\Models;
 
-use MicrosoftAzure\Storage\Common\Internal\Utilities;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Utilities;
 
 /**
  * Holds elements of queue properties metrics field.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Models
+ * @package   MicrosoftAzureLegacy\Storage\Common\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

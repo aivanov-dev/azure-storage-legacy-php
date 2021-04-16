@@ -15,50 +15,50 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Queue
+ * @package   MicrosoftAzureLegacy\Storage\Queue
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Queue;
+namespace MicrosoftAzureLegacy\Storage\Queue;
 
-use MicrosoftAzure\Storage\Common\Internal\Authentication\SharedAccessSignatureAuthScheme;
-use MicrosoftAzure\Storage\Common\Internal\Authentication\SharedKeyAuthScheme;
-use MicrosoftAzure\Storage\Common\Internal\Authentication\TokenAuthScheme;
-use MicrosoftAzure\Storage\Common\Internal\Http\HttpFormatter;
-use MicrosoftAzure\Storage\Common\Internal\Middlewares\CommonRequestMiddleware;
-use MicrosoftAzure\Storage\Common\Internal\Serialization\XmlSerializer;
-use MicrosoftAzure\Storage\Common\Internal\ServiceRestProxy;
-use MicrosoftAzure\Storage\Common\Internal\ServiceRestTrait;
-use MicrosoftAzure\Storage\Common\Internal\StorageServiceSettings;
-use MicrosoftAzure\Storage\Common\Internal\Utilities;
-use MicrosoftAzure\Storage\Common\Internal\Validate;
-use MicrosoftAzure\Storage\Common\LocationMode;
-use MicrosoftAzure\Storage\Queue\Internal\IQueue;
-use MicrosoftAzure\Storage\Queue\Internal\QueueResources as Resources;
-use MicrosoftAzure\Storage\Queue\Models\CreateMessageOptions;
-use MicrosoftAzure\Storage\Queue\Models\CreateMessageResult;
-use MicrosoftAzure\Storage\Queue\Models\CreateQueueOptions;
-use MicrosoftAzure\Storage\Queue\Models\GetQueueMetadataResult;
-use MicrosoftAzure\Storage\Queue\Models\ListMessagesOptions;
-use MicrosoftAzure\Storage\Queue\Models\ListMessagesResult;
-use MicrosoftAzure\Storage\Queue\Models\ListQueuesOptions;
-use MicrosoftAzure\Storage\Queue\Models\ListQueuesResult;
-use MicrosoftAzure\Storage\Queue\Models\PeekMessagesOptions;
-use MicrosoftAzure\Storage\Queue\Models\PeekMessagesResult;
-use MicrosoftAzure\Storage\Queue\Models\QueueACL;
-use MicrosoftAzure\Storage\Queue\Models\QueueMessage;
-use MicrosoftAzure\Storage\Queue\Models\QueueServiceOptions;
-use MicrosoftAzure\Storage\Queue\Models\UpdateMessageResult;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Authentication\SharedAccessSignatureAuthScheme;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Authentication\SharedKeyAuthScheme;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Authentication\TokenAuthScheme;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Http\HttpFormatter;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Middlewares\CommonRequestMiddleware;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Serialization\XmlSerializer;
+use MicrosoftAzureLegacy\Storage\Common\Internal\ServiceRestProxy;
+use MicrosoftAzureLegacy\Storage\Common\Internal\ServiceRestTrait;
+use MicrosoftAzureLegacy\Storage\Common\Internal\StorageServiceSettings;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Utilities;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Validate;
+use MicrosoftAzureLegacy\Storage\Common\LocationMode;
+use MicrosoftAzureLegacy\Storage\Queue\Internal\IQueue;
+use MicrosoftAzureLegacy\Storage\Queue\Internal\QueueResources as Resources;
+use MicrosoftAzureLegacy\Storage\Queue\Models\CreateMessageOptions;
+use MicrosoftAzureLegacy\Storage\Queue\Models\CreateMessageResult;
+use MicrosoftAzureLegacy\Storage\Queue\Models\CreateQueueOptions;
+use MicrosoftAzureLegacy\Storage\Queue\Models\GetQueueMetadataResult;
+use MicrosoftAzureLegacy\Storage\Queue\Models\ListMessagesOptions;
+use MicrosoftAzureLegacy\Storage\Queue\Models\ListMessagesResult;
+use MicrosoftAzureLegacy\Storage\Queue\Models\ListQueuesOptions;
+use MicrosoftAzureLegacy\Storage\Queue\Models\ListQueuesResult;
+use MicrosoftAzureLegacy\Storage\Queue\Models\PeekMessagesOptions;
+use MicrosoftAzureLegacy\Storage\Queue\Models\PeekMessagesResult;
+use MicrosoftAzureLegacy\Storage\Queue\Models\QueueACL;
+use MicrosoftAzureLegacy\Storage\Queue\Models\QueueMessage;
+use MicrosoftAzureLegacy\Storage\Queue\Models\QueueServiceOptions;
+use MicrosoftAzureLegacy\Storage\Queue\Models\UpdateMessageResult;
 
 /**
  * This class constructs HTTP requests and receive HTTP responses for queue
  * service layer.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Queue
+ * @package   MicrosoftAzureLegacy\Storage\Queue
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
@@ -75,7 +75,7 @@ class QueueRestProxy extends ServiceRestProxy implements IQueue
      * - http: (array) the underlying guzzle options. refer to
      *   http://docs.guzzlephp.org/en/latest/request-options.html for detailed available options
      * - middlewares: (mixed) the middleware should be either an instance of a sub-class that
-     *   implements {@see MicrosoftAzure\Storage\Common\Middlewares\IMiddleware}, or a
+     *   implements {@see MicrosoftAzureLegacy\Storage\Common\Middlewares\IMiddleware}, or a
      *   `callable` that follows the Guzzle middleware implementation convention
      *
      * Please refer to
@@ -140,7 +140,7 @@ class QueueRestProxy extends ServiceRestProxy implements IQueue
      * - http: (array) the underlying guzzle options. refer to
      *   http://docs.guzzlephp.org/en/latest/request-options.html for detailed available options
      * - middlewares: (mixed) the middleware should be either an instance of a sub-class that
-     *   implements {@see MicrosoftAzure\Storage\Common\Middlewares\IMiddleware}, or a
+     *   implements {@see MicrosoftAzureLegacy\Storage\Common\Middlewares\IMiddleware}, or a
      *   `callable` that follows the Guzzle middleware implementation convention
      *
      * Please refer to

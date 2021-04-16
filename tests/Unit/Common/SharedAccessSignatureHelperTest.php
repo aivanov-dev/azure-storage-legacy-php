@@ -15,26 +15,26 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Common
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Common
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Unit\Common;
+namespace MicrosoftAzureLegacy\Storage\Tests\Unit\Common;
 
-use MicrosoftAzure\Storage\Common\Internal\Resources;
-use MicrosoftAzure\Storage\Common\ServiceException;
-use MicrosoftAzure\Storage\Tests\Framework\TestResources;
-use MicrosoftAzure\Storage\Tests\Framework\ReflectionTestBase;
-use MicrosoftAzure\Storage\Common\SharedAccessSignatureHelper;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Resources;
+use MicrosoftAzureLegacy\Storage\Common\ServiceException;
+use MicrosoftAzureLegacy\Storage\Tests\Framework\TestResources;
+use MicrosoftAzureLegacy\Storage\Tests\Framework\ReflectionTestBase;
+use MicrosoftAzureLegacy\Storage\Common\SharedAccessSignatureHelper;
 
 /**
 * Unit tests for class SharedAccessSignatureHelper
 *
 * @category  Microsoft
-* @package   MicrosoftAzure\Storage\Tests\Unit\Common
+* @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Common
 * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
 * @copyright 2017 Microsoft Corporation
 * @license   https://github.com/azure/azure-storage-php/LICENSE

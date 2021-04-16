@@ -15,21 +15,21 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Table\Internal
+ * @package   MicrosoftAzureLegacy\Storage\Table\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Table\Internal;
+namespace MicrosoftAzureLegacy\Storage\Table\Internal;
 
 /**
  * Defines how to serialize and unserialize table wrapper JSON
  *
  * @ignore
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Table\Internal
+ * @package   MicrosoftAzureLegacy\Storage\Table\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
@@ -67,18 +67,18 @@ interface IODataReaderWriter
     /**
      * Constructs JSON representation for entity.
      *
-     * @param \MicrosoftAzure\Storage\Table\Models\Entity $entity The entity instance.
+     * @param \MicrosoftAzureLegacy\Storage\Table\Models\Entity $entity The entity instance.
      *
      * @return string
      */
-    public function getEntity(\MicrosoftAzure\Storage\Table\Models\Entity $entity);
+    public function getEntity(\MicrosoftAzureLegacy\Storage\Table\Models\Entity $entity);
 
     /**
      * Constructs entity from HTTP response body.
      *
      * @param string $body The HTTP response body.
      *
-     * @return \MicrosoftAzure\Storage\Table\Models\Entity
+     * @return \MicrosoftAzureLegacy\Storage\Table\Models\Entity
      */
     public function parseEntity($body);
 

@@ -15,19 +15,19 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Internal\Authentication
+ * @package   MicrosoftAzureLegacy\Storage\Common\Internal\Authentication
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Common\Internal\Authentication;
+namespace MicrosoftAzureLegacy\Storage\Common\Internal\Authentication;
 
 use GuzzleHttp\Psr7\Request;
-use MicrosoftAzure\Storage\Common\Internal\Http\HttpFormatter;
-use MicrosoftAzure\Storage\Common\Internal\Resources;
-use MicrosoftAzure\Storage\Common\Internal\Utilities;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Http\HttpFormatter;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Resources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Utilities;
 
 /**
  * Provides shared key authentication scheme for blob and queue. For more info
@@ -35,7 +35,7 @@ use MicrosoftAzure\Storage\Common\Internal\Utilities;
  *
  * @ignore
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Internal\Authentication
+ * @package   MicrosoftAzureLegacy\Storage\Common\Internal\Authentication
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

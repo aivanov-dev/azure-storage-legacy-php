@@ -15,29 +15,29 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Framework
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Framework
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Framework;
+namespace MicrosoftAzureLegacy\Storage\Tests\Framework;
 
-use MicrosoftAzure\Storage\File\FileRestProxy;
-use MicrosoftAzure\Storage\Tests\Framework\ServiceRestProxyTestBase;
-use MicrosoftAzure\Storage\File\Models\CreateShareOptions;
-use MicrosoftAzure\Storage\File\Models\CreateDirectoryOptions;
-use MicrosoftAzure\Storage\File\Models\ListSharesOptions;
-use MicrosoftAzure\Storage\Common\Exceptions\ServiceException;
-use MicrosoftAzure\Storage\Common\Internal\Utilities;
-use MicrosoftAzure\Storage\Common\Middlewares\RetryMiddlewareFactory;
+use MicrosoftAzureLegacy\Storage\File\FileRestProxy;
+use MicrosoftAzureLegacy\Storage\Tests\Framework\ServiceRestProxyTestBase;
+use MicrosoftAzureLegacy\Storage\File\Models\CreateShareOptions;
+use MicrosoftAzureLegacy\Storage\File\Models\CreateDirectoryOptions;
+use MicrosoftAzureLegacy\Storage\File\Models\ListSharesOptions;
+use MicrosoftAzureLegacy\Storage\Common\Exceptions\ServiceException;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Utilities;
+use MicrosoftAzureLegacy\Storage\Common\Middlewares\RetryMiddlewareFactory;
 
 /**
  * TestBase class for each unit test class.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Framework
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Framework
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

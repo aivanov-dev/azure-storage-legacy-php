@@ -13,37 +13,37 @@
  * limitations under the License.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Samples
+ * @package   MicrosoftAzureLegacy\Storage\Samples
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2019 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Samples;
+namespace MicrosoftAzureLegacy\Storage\Samples;
 
 require_once "../vendor/autoload.php";
 
-use MicrosoftAzure\Storage\Blob\BlobRestProxy;
-use MicrosoftAzure\Storage\Blob\BlobSharedAccessSignatureHelper;
-use MicrosoftAzure\Storage\Blob\Models\CreateBlockBlobOptions;
-use MicrosoftAzure\Storage\Blob\Models\CreateContainerOptions;
-use MicrosoftAzure\Storage\Blob\Models\ListBlobsOptions;
-use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
-use MicrosoftAzure\Storage\Blob\Models\DeleteBlobOptions;
-use MicrosoftAzure\Storage\Blob\Models\CreateBlobOptions;
-use MicrosoftAzure\Storage\Blob\Models\GetBlobOptions;
-use MicrosoftAzure\Storage\Blob\Models\SetBlobPropertiesOptions;
-use MicrosoftAzure\Storage\Blob\Models\ListPageBlobRangesOptions;
-use MicrosoftAzure\Storage\Common\Exceptions\ServiceException;
-use MicrosoftAzure\Storage\Common\Exceptions\InvalidArgumentTypeException;
-use MicrosoftAzure\Storage\Common\Internal\Resources;
-use MicrosoftAzure\Storage\Common\Internal\StorageServiceSettings;
-use MicrosoftAzure\Storage\Common\Models\Range;
-use MicrosoftAzure\Storage\Common\Models\Logging;
-use MicrosoftAzure\Storage\Common\Models\Metrics;
-use MicrosoftAzure\Storage\Common\Models\RetentionPolicy;
-use MicrosoftAzure\Storage\Common\Models\ServiceProperties;
+use MicrosoftAzureLegacy\Storage\Blob\BlobRestProxy;
+use MicrosoftAzureLegacy\Storage\Blob\BlobSharedAccessSignatureHelper;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CreateBlockBlobOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CreateContainerOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\ListBlobsOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\PublicAccessType;
+use MicrosoftAzureLegacy\Storage\Blob\Models\DeleteBlobOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CreateBlobOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\GetBlobOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\SetBlobPropertiesOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\ListPageBlobRangesOptions;
+use MicrosoftAzureLegacy\Storage\Common\Exceptions\ServiceException;
+use MicrosoftAzureLegacy\Storage\Common\Exceptions\InvalidArgumentTypeException;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Resources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\StorageServiceSettings;
+use MicrosoftAzureLegacy\Storage\Common\Models\Range;
+use MicrosoftAzureLegacy\Storage\Common\Models\Logging;
+use MicrosoftAzureLegacy\Storage\Common\Models\Metrics;
+use MicrosoftAzureLegacy\Storage\Common\Models\RetentionPolicy;
+use MicrosoftAzureLegacy\Storage\Common\Models\ServiceProperties;
 
 $connectionString = 'DefaultEndpointsProtocol=https;AccountName=<YOUR_ACCOUNT_NAME>;';
 $bearerToken = 'INITIAL BEARER TOKEN THAT DOES NOT WORK';

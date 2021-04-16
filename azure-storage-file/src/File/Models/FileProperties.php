@@ -15,24 +15,24 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\File\Models
+ * @package   MicrosoftAzureLegacy\Storage\File\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\File\Models;
+namespace MicrosoftAzureLegacy\Storage\File\Models;
 
-use MicrosoftAzure\Storage\File\Internal\FileResources as Resources;
-use MicrosoftAzure\Storage\Common\Internal\Utilities;
-use MicrosoftAzure\Storage\Common\Internal\Validate;
+use MicrosoftAzureLegacy\Storage\File\Internal\FileResources as Resources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Utilities;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Validate;
 
 /**
  * Represents file properties
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\File\Models
+ * @package   MicrosoftAzureLegacy\Storage\File\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

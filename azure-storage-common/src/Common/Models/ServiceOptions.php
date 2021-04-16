@@ -15,27 +15,27 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Models
+ * @package   MicrosoftAzureLegacy\Storage\Common\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Common\Models;
+namespace MicrosoftAzureLegacy\Storage\Common\Models;
 
-use MicrosoftAzure\Storage\Common\LocationMode;
-use MicrosoftAzure\Storage\Common\Internal\Resources;
-use MicrosoftAzure\Storage\Common\Internal\Validate;
-use MicrosoftAzure\Storage\Common\Middlewares\MiddlewareStack;
-use MicrosoftAzure\Storage\Common\Middlewares\IMiddleware;
+use MicrosoftAzureLegacy\Storage\Common\LocationMode;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Resources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Validate;
+use MicrosoftAzureLegacy\Storage\Common\Middlewares\MiddlewareStack;
+use MicrosoftAzureLegacy\Storage\Common\Middlewares\IMiddleware;
 
 /**
  * This class provides the base structure of service options, granting user to
  * send with different options for each individual API call.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Models
+ * @package   MicrosoftAzureLegacy\Storage\Common\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

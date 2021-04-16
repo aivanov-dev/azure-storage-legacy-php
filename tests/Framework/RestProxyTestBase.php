@@ -15,24 +15,24 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Framework
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Framework
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Framework;
+namespace MicrosoftAzureLegacy\Storage\Tests\Framework;
 
-use MicrosoftAzure\Storage\Common\Logger;
-use MicrosoftAzure\Storage\Common\Internal\Serialization\XmlSerializer;
-use MicrosoftAzure\Storage\Common\ServicesBuilder;
+use MicrosoftAzureLegacy\Storage\Common\Logger;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Serialization\XmlSerializer;
+use MicrosoftAzureLegacy\Storage\Common\ServicesBuilder;
 
 /**
  * Testbase for all REST proxy tests.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Framework
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Framework
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
@@ -65,7 +65,7 @@ class RestProxyTestBase extends \PHPUnit\Framework\TestCase
         assert_options(ASSERT_ACTIVE, 1);
         assert_options(ASSERT_WARNING, 0);
         assert_options(ASSERT_QUIET_EVAL, 1);
-        assert_options(ASSERT_CALLBACK, 'MicrosoftAzure\Storage\Tests\Framework\RestProxyTestBase::assertHandler');
+        assert_options(ASSERT_CALLBACK, 'MicrosoftAzureLegacy\Storage\Tests\Framework\RestProxyTestBase::assertHandler');
     }
 
     public function setProxy($serviceRestProxy)

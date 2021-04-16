@@ -15,27 +15,27 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   Tests\Unit\MicrosoftAzure\Storage\Table\internal
+ * @package   Tests\Unit\MicrosoftAzureLegacy\Storage\Table\internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace Tests\Unit\MicrosoftAzure\Storage\Table\Models\internal;
+namespace Tests\Unit\MicrosoftAzureLegacy\Storage\Table\Models\internal;
 
-use MicrosoftAzure\Storage\Tests\Framework\TestResources;
-use MicrosoftAzure\Storage\Common\Internal\Utilities;
-use MicrosoftAzure\Storage\Common\Internal\Resources;
-use MicrosoftAzure\Storage\Table\Internal\JsonODataReaderWriter;
-use MicrosoftAzure\Storage\Table\Models\EdmType;
-use MicrosoftAzure\Storage\Table\Models\Entity;
+use MicrosoftAzureLegacy\Storage\Tests\Framework\TestResources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Utilities;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Resources;
+use MicrosoftAzureLegacy\Storage\Table\Internal\JsonODataReaderWriter;
+use MicrosoftAzureLegacy\Storage\Table\Models\EdmType;
+use MicrosoftAzureLegacy\Storage\Table\Models\Entity;
 
 /**
  * Unit tests for class JsonODataReaderWriter
  *
  * @category  Microsoft
- * @package   Tests\Unit\MicrosoftAzure\Storage\Table\internal
+ * @package   Tests\Unit\MicrosoftAzureLegacy\Storage\Table\internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

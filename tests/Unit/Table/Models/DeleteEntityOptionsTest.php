@@ -15,22 +15,22 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Table\Models
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Table\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
-namespace MicrosoftAzure\Storage\Tests\Unit\Table\Models;
+namespace MicrosoftAzureLegacy\Storage\Tests\Unit\Table\Models;
 
-use MicrosoftAzure\Storage\Table\Models\DeleteEntityOptions;
-use MicrosoftAzure\Storage\Table\Models\ETag;
+use MicrosoftAzureLegacy\Storage\Table\Models\DeleteEntityOptions;
+use MicrosoftAzureLegacy\Storage\Table\Models\ETag;
 
 /**
  * Unit tests for class DeleteEntityOptions
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Table\Models
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Table\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

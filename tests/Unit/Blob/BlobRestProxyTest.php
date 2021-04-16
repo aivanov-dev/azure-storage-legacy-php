@@ -15,64 +15,64 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Blob
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Blob
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Unit\Blob;
+namespace MicrosoftAzureLegacy\Storage\Tests\Unit\Blob;
 
-use MicrosoftAzure\Storage\Blob\BlobRestProxy;
-use MicrosoftAzure\Storage\Blob\Internal\BlobResources;
-use MicrosoftAzure\Storage\Blob\Internal\IBlob;
-use MicrosoftAzure\Storage\Blob\Models\BlobServiceOptions;
-use MicrosoftAzure\Storage\Blob\Models\CreateBlockBlobOptions;
-use MicrosoftAzure\Storage\Blob\Models\CreatePageBlobFromContentOptions;
-use MicrosoftAzure\Storage\Blob\Models\CreatePageBlobOptions;
-use MicrosoftAzure\Storage\Tests\Framework\VirtualFileSystem;
-use MicrosoftAzure\Storage\Tests\Framework\BlobServiceRestProxyTestBase;
-use MicrosoftAzure\Storage\Tests\Framework\TestResources;
-use MicrosoftAzure\Storage\Common\Internal\Resources;
-use MicrosoftAzure\Storage\Common\Internal\Utilities;
-use MicrosoftAzure\Storage\Common\Exceptions\ServiceException;
-use MicrosoftAzure\Storage\Common\Models\Range;
-use MicrosoftAzure\Storage\Common\Models\RangeDiff;
-use MicrosoftAzure\Storage\Common\Models\ServiceProperties;
-use MicrosoftAzure\Storage\Blob\Models\AppendBlockOptions;
-use MicrosoftAzure\Storage\Blob\Models\ListContainersOptions;
-use MicrosoftAzure\Storage\Blob\Models\ListContainersResult;
-use MicrosoftAzure\Storage\Blob\Models\CreateContainerOptions;
-use MicrosoftAzure\Storage\Blob\Models\GetBlobPropertiesOptions;
-use MicrosoftAzure\Storage\Blob\Models\GetContainerPropertiesResult;
-use MicrosoftAzure\Storage\Blob\Models\ContainerACL;
-use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
-use MicrosoftAzure\Storage\Blob\Models\ListBlobsResult;
-use MicrosoftAzure\Storage\Blob\Models\ListBlobsOptions;
-use MicrosoftAzure\Storage\Blob\Models\ListBlobBlocksOptions;
-use MicrosoftAzure\Storage\Blob\Models\CreateBlobOptions;
-use MicrosoftAzure\Storage\Blob\Models\SetBlobPropertiesOptions;
-use MicrosoftAzure\Storage\Blob\Models\GetBlobMetadataResult;
-use MicrosoftAzure\Storage\Blob\Models\SetBlobMetadataResult;
-use MicrosoftAzure\Storage\Blob\Models\GetBlobResult;
-use MicrosoftAzure\Storage\Blob\Models\BlobType;
-use MicrosoftAzure\Storage\Blob\Models\CreateBlobPagesResult;
-use MicrosoftAzure\Storage\Blob\Models\BlockList;
-use MicrosoftAzure\Storage\Blob\Models\BlobBlockType;
-use MicrosoftAzure\Storage\Blob\Models\GetBlobOptions;
-use MicrosoftAzure\Storage\Blob\Models\Block;
-use MicrosoftAzure\Storage\Blob\Models\CopyBlobOptions;
-use MicrosoftAzure\Storage\Blob\Models\CreateBlobSnapshotOptions;
-use MicrosoftAzure\Storage\Blob\Models\CreateBlobSnapshotResult;
-use MicrosoftAzure\Storage\Blob\Models\DeleteBlobOptions;
-use MicrosoftAzure\Storage\Blob\Models\AccessCondition;
+use MicrosoftAzureLegacy\Storage\Blob\BlobRestProxy;
+use MicrosoftAzureLegacy\Storage\Blob\Internal\BlobResources;
+use MicrosoftAzureLegacy\Storage\Blob\Internal\IBlob;
+use MicrosoftAzureLegacy\Storage\Blob\Models\BlobServiceOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CreateBlockBlobOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CreatePageBlobFromContentOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CreatePageBlobOptions;
+use MicrosoftAzureLegacy\Storage\Tests\Framework\VirtualFileSystem;
+use MicrosoftAzureLegacy\Storage\Tests\Framework\BlobServiceRestProxyTestBase;
+use MicrosoftAzureLegacy\Storage\Tests\Framework\TestResources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Resources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Utilities;
+use MicrosoftAzureLegacy\Storage\Common\Exceptions\ServiceException;
+use MicrosoftAzureLegacy\Storage\Common\Models\Range;
+use MicrosoftAzureLegacy\Storage\Common\Models\RangeDiff;
+use MicrosoftAzureLegacy\Storage\Common\Models\ServiceProperties;
+use MicrosoftAzureLegacy\Storage\Blob\Models\AppendBlockOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\ListContainersOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\ListContainersResult;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CreateContainerOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\GetBlobPropertiesOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\GetContainerPropertiesResult;
+use MicrosoftAzureLegacy\Storage\Blob\Models\ContainerACL;
+use MicrosoftAzureLegacy\Storage\Blob\Models\PublicAccessType;
+use MicrosoftAzureLegacy\Storage\Blob\Models\ListBlobsResult;
+use MicrosoftAzureLegacy\Storage\Blob\Models\ListBlobsOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\ListBlobBlocksOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CreateBlobOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\SetBlobPropertiesOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\GetBlobMetadataResult;
+use MicrosoftAzureLegacy\Storage\Blob\Models\SetBlobMetadataResult;
+use MicrosoftAzureLegacy\Storage\Blob\Models\GetBlobResult;
+use MicrosoftAzureLegacy\Storage\Blob\Models\BlobType;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CreateBlobPagesResult;
+use MicrosoftAzureLegacy\Storage\Blob\Models\BlockList;
+use MicrosoftAzureLegacy\Storage\Blob\Models\BlobBlockType;
+use MicrosoftAzureLegacy\Storage\Blob\Models\GetBlobOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\Block;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CopyBlobOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CreateBlobSnapshotOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CreateBlobSnapshotResult;
+use MicrosoftAzureLegacy\Storage\Blob\Models\DeleteBlobOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\AccessCondition;
 
 /**
  * Unit tests for class BlobRestProxy
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Blob
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Blob
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
@@ -232,7 +232,7 @@ class BlobRestProxyTest extends BlobServiceRestProxyTestBase
     }
 
     /**
-                    * @expectedException MicrosoftAzure\Storage\Common\Exceptions\ServiceException
+                    * @expectedException MicrosoftAzureLegacy\Storage\Common\Exceptions\ServiceException
     * @expectedExceptionMessage 400
     */
     public function testListContainersWithInvalidNextMarkerFail()
@@ -334,7 +334,7 @@ class BlobRestProxyTest extends BlobServiceRestProxyTestBase
     }
 
     /**
-     * @expectedException MicrosoftAzure\Storage\Common\Exceptions\ServiceException
+     * @expectedException MicrosoftAzureLegacy\Storage\Common\Exceptions\ServiceException
      * @expectedExceptionMessage 400
     */
     public function testCreateContainerInvalidNameFail()
@@ -347,7 +347,7 @@ class BlobRestProxyTest extends BlobServiceRestProxyTestBase
     }
 
     /**
-     * @expectedException MicrosoftAzure\Storage\Common\Exceptions\ServiceException
+     * @expectedException MicrosoftAzureLegacy\Storage\Common\Exceptions\ServiceException
      * @expectedExceptionMessage 409
     */
     public function testCreateContainerAlreadyExitsFail()
@@ -376,7 +376,7 @@ class BlobRestProxyTest extends BlobServiceRestProxyTestBase
     }
 
     /**
-            * @expectedException MicrosoftAzure\Storage\Common\Exceptions\ServiceException
+            * @expectedException MicrosoftAzureLegacy\Storage\Common\Exceptions\ServiceException
     * @expectedExceptionMessage 404
     */
     public function testDeleteContainerFail()
@@ -525,7 +525,7 @@ class BlobRestProxyTest extends BlobServiceRestProxyTestBase
         $this->assertNull($blobs[2]->getSnapshot());
         $this->assertNotNull($blobs[2]->getUrl());
         $this->assertCount(0, $blobs[2]->getMetadata());
-        $this->assertInstanceOf('MicrosoftAzure\Storage\Blob\Models\BlobProperties', $blobs[2]->getProperties());
+        $this->assertInstanceOf('MicrosoftAzureLegacy\Storage\Blob\Models\BlobProperties', $blobs[2]->getProperties());
     }
 
     public function testListBlobsWithOptions()
@@ -786,7 +786,7 @@ class BlobRestProxyTest extends BlobServiceRestProxyTestBase
     }
 
     /**
-    * @expectedException MicrosoftAzure\Storage\Common\Exceptions\ServiceException
+    * @expectedException MicrosoftAzureLegacy\Storage\Common\Exceptions\ServiceException
     * @expectedExceptionMessage 412
     */
     public function testAppendBlockConflictBecauseOfAppendPosition()
@@ -819,7 +819,7 @@ class BlobRestProxyTest extends BlobServiceRestProxyTestBase
     }
 
     /**
-                     * @expectedException MicrosoftAzure\Storage\Common\Exceptions\ServiceException
+                     * @expectedException MicrosoftAzureLegacy\Storage\Common\Exceptions\ServiceException
      * @expectedExceptionMessage 412
     */
     public function testAppendBlockConflictBecauseOfMaxBlobSize()
@@ -1036,7 +1036,7 @@ class BlobRestProxyTest extends BlobServiceRestProxyTestBase
     }
 
     /**
-          * @expectedException MicrosoftAzure\Storage\Common\Exceptions\ServiceException
+          * @expectedException MicrosoftAzureLegacy\Storage\Common\Exceptions\ServiceException
      * @expectedExceptionMessage 404
      */
     public function testGetBlobNotExist()
@@ -1360,7 +1360,7 @@ class BlobRestProxyTest extends BlobServiceRestProxyTestBase
         $result = $this->restProxy->breakLease($name, $blob, 10);
 
         // Assert
-        $this->assertInstanceOf('MicrosoftAzure\Storage\Blob\Models\BreakLeaseResult', $result);
+        $this->assertInstanceOf('MicrosoftAzureLegacy\Storage\Blob\Models\BreakLeaseResult', $result);
         $this->assertNotNull($result->getLeaseTime());
     }
 

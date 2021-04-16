@@ -15,20 +15,20 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Table\Models\Filters
+ * @package   MicrosoftAzureLegacy\Storage\Table\Models\Filters
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Table\Models\Filters;
+namespace MicrosoftAzureLegacy\Storage\Table\Models\Filters;
 
 /**
  * Filter operations
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Table\Models\Filters
+ * @package   MicrosoftAzureLegacy\Storage\Table\Models\Filters
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
@@ -42,7 +42,7 @@ class Filter
      * @param Filter $left  The left filter
      * @param Filter $right The right filter
      *
-     * @return \MicrosoftAzure\Storage\Table\Models\Filters\BinaryFilter
+     * @return \MicrosoftAzureLegacy\Storage\Table\Models\Filters\BinaryFilter
      */
     public static function applyAnd(Filter $left, Filter $right)
     {
@@ -55,7 +55,7 @@ class Filter
      *
      * @param Filter $operand The operand
      *
-     * @return \MicrosoftAzure\Storage\Table\Models\Filters\UnaryFilter
+     * @return \MicrosoftAzureLegacy\Storage\Table\Models\Filters\UnaryFilter
      */
     public static function applyNot(Filter $operand)
     {
@@ -167,7 +167,7 @@ class Filter
      * @param mixed  $value   The filter value
      * @param string $edmType The value EDM type.
      *
-     * @return \MicrosoftAzure\Storage\Table\Models\Filters\ConstantFilter
+     * @return \MicrosoftAzureLegacy\Storage\Table\Models\Filters\ConstantFilter
      */
     public static function applyConstant($value, $edmType = null)
     {
@@ -180,7 +180,7 @@ class Filter
      *
      * @param string $value The filter value
      *
-     * @return \MicrosoftAzure\Storage\Table\Models\Filters\PropertyNameFilter
+     * @return \MicrosoftAzureLegacy\Storage\Table\Models\Filters\PropertyNameFilter
      */
     public static function applyPropertyName($value)
     {
@@ -193,7 +193,7 @@ class Filter
      *
      * @param string $value The raw string filter expression
      *
-     * @return \MicrosoftAzure\Storage\Table\Models\Filters\QueryStringFilter
+     * @return \MicrosoftAzureLegacy\Storage\Table\Models\Filters\QueryStringFilter
      */
     public static function applyQueryString($value)
     {

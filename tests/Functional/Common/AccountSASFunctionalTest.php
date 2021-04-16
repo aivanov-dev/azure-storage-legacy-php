@@ -15,23 +15,23 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Framework
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Framework
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Functional\Common;
+namespace MicrosoftAzureLegacy\Storage\Tests\Functional\Common;
 
-use MicrosoftAzure\Storage\Tests\Framework\SASFunctionalTestBase;
-use MicrosoftAzure\Storage\Tests\Framework\TestResources;
+use MicrosoftAzureLegacy\Storage\Tests\Framework\SASFunctionalTestBase;
+use MicrosoftAzureLegacy\Storage\Tests\Framework\TestResources;
 
 /**
  * Tests for account SAS proxy tests.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Framework
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Framework
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

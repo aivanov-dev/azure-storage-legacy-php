@@ -15,26 +15,26 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Blob\Internal
+ * @package   MicrosoftAzureLegacy\Storage\Blob\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Blob\Internal;
+namespace MicrosoftAzureLegacy\Storage\Blob\Internal;
 
-use MicrosoftAzure\Storage\Blob\Models as BlobModels;
-use MicrosoftAzure\Storage\Common\Models\ServiceOptions;
-use MicrosoftAzure\Storage\Common\Models\ServiceProperties;
-use MicrosoftAzure\Storage\Common\Models\Range;
+use MicrosoftAzureLegacy\Storage\Blob\Models as BlobModels;
+use MicrosoftAzureLegacy\Storage\Common\Models\ServiceOptions;
+use MicrosoftAzureLegacy\Storage\Common\Models\ServiceProperties;
+use MicrosoftAzureLegacy\Storage\Common\Models\Range;
 
 /**
  * This interface has all REST APIs provided by Windows Azure for Blob service.
  *
  * @ignore
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Blob\Internal
+ * @package   MicrosoftAzureLegacy\Storage\Blob\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

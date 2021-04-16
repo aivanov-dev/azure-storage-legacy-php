@@ -15,21 +15,21 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Common\Models
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
-namespace MicrosoftAzure\Storage\Tests\Unit\Common\Models;
+namespace MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Models;
 
-use MicrosoftAzure\Storage\Common\Models\Range;
+use MicrosoftAzureLegacy\Storage\Common\Models\Range;
 
 /**
  * Unit tests for class Range
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Common\Models
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

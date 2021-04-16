@@ -15,51 +15,51 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\File
+ * @package   MicrosoftAzureLegacy\Storage\File
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\File;
+namespace MicrosoftAzureLegacy\Storage\File;
 
-use MicrosoftAzure\Storage\Common\Internal\Authentication\SharedAccessSignatureAuthScheme;
-use MicrosoftAzure\Storage\Common\Internal\Authentication\SharedKeyAuthScheme;
-use MicrosoftAzure\Storage\Common\Internal\Middlewares\CommonRequestMiddleware;
-use MicrosoftAzure\Storage\Common\Internal\Serialization\XmlSerializer;
-use MicrosoftAzure\Storage\Common\Internal\StorageServiceSettings;
-use MicrosoftAzure\Storage\File\Internal\FileResources as Resources;
-use MicrosoftAzure\Storage\File\Internal\IFile;
-use MicrosoftAzure\Storage\Common\Internal\ServiceRestProxy;
-use MicrosoftAzure\Storage\Common\Internal\ServiceRestTrait;
-use MicrosoftAzure\Storage\Common\Internal\Utilities;
-use MicrosoftAzure\Storage\Common\Internal\Validate;
-use MicrosoftAzure\Storage\Common\LocationMode;
-use MicrosoftAzure\Storage\Common\Models\Range;
-use MicrosoftAzure\Storage\File\Models\CreateFileFromContentOptions;
-use MicrosoftAzure\Storage\File\Models\ShareACL;
-use MicrosoftAzure\Storage\File\Models\ListSharesOptions;
-use MicrosoftAzure\Storage\File\Models\ListSharesResult;
-use MicrosoftAzure\Storage\File\Models\CreateShareOptions;
-use MicrosoftAzure\Storage\File\Models\CreateDirectoryOptions;
-use MicrosoftAzure\Storage\File\Models\FileServiceOptions;
-use MicrosoftAzure\Storage\File\Models\GetShareACLResult;
-use MicrosoftAzure\Storage\File\Models\GetSharePropertiesResult;
-use MicrosoftAzure\Storage\File\Models\GetShareStatsResult;
-use MicrosoftAzure\Storage\File\Models\ListDirectoriesAndFilesOptions;
-use MicrosoftAzure\Storage\File\Models\ListDirectoriesAndFilesResult;
-use MicrosoftAzure\Storage\File\Models\GetDirectoryPropertiesResult;
-use MicrosoftAzure\Storage\File\Models\GetDirectoryMetadataResult;
-use MicrosoftAzure\Storage\File\Models\GetFileMetadataResult;
-use MicrosoftAzure\Storage\File\Models\CreateFileOptions;
-use MicrosoftAzure\Storage\File\Models\FileProperties;
-use MicrosoftAzure\Storage\File\Models\PutFileRangeOptions;
-use MicrosoftAzure\Storage\File\Models\GetFileOptions;
-use MicrosoftAzure\Storage\File\Models\GetFileResult;
-use MicrosoftAzure\Storage\File\Models\ListFileRangesResult;
-use MicrosoftAzure\Storage\File\Models\CopyFileResult;
-use MicrosoftAzure\Storage\Common\Internal\Http\HttpFormatter;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Authentication\SharedAccessSignatureAuthScheme;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Authentication\SharedKeyAuthScheme;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Middlewares\CommonRequestMiddleware;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Serialization\XmlSerializer;
+use MicrosoftAzureLegacy\Storage\Common\Internal\StorageServiceSettings;
+use MicrosoftAzureLegacy\Storage\File\Internal\FileResources as Resources;
+use MicrosoftAzureLegacy\Storage\File\Internal\IFile;
+use MicrosoftAzureLegacy\Storage\Common\Internal\ServiceRestProxy;
+use MicrosoftAzureLegacy\Storage\Common\Internal\ServiceRestTrait;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Utilities;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Validate;
+use MicrosoftAzureLegacy\Storage\Common\LocationMode;
+use MicrosoftAzureLegacy\Storage\Common\Models\Range;
+use MicrosoftAzureLegacy\Storage\File\Models\CreateFileFromContentOptions;
+use MicrosoftAzureLegacy\Storage\File\Models\ShareACL;
+use MicrosoftAzureLegacy\Storage\File\Models\ListSharesOptions;
+use MicrosoftAzureLegacy\Storage\File\Models\ListSharesResult;
+use MicrosoftAzureLegacy\Storage\File\Models\CreateShareOptions;
+use MicrosoftAzureLegacy\Storage\File\Models\CreateDirectoryOptions;
+use MicrosoftAzureLegacy\Storage\File\Models\FileServiceOptions;
+use MicrosoftAzureLegacy\Storage\File\Models\GetShareACLResult;
+use MicrosoftAzureLegacy\Storage\File\Models\GetSharePropertiesResult;
+use MicrosoftAzureLegacy\Storage\File\Models\GetShareStatsResult;
+use MicrosoftAzureLegacy\Storage\File\Models\ListDirectoriesAndFilesOptions;
+use MicrosoftAzureLegacy\Storage\File\Models\ListDirectoriesAndFilesResult;
+use MicrosoftAzureLegacy\Storage\File\Models\GetDirectoryPropertiesResult;
+use MicrosoftAzureLegacy\Storage\File\Models\GetDirectoryMetadataResult;
+use MicrosoftAzureLegacy\Storage\File\Models\GetFileMetadataResult;
+use MicrosoftAzureLegacy\Storage\File\Models\CreateFileOptions;
+use MicrosoftAzureLegacy\Storage\File\Models\FileProperties;
+use MicrosoftAzureLegacy\Storage\File\Models\PutFileRangeOptions;
+use MicrosoftAzureLegacy\Storage\File\Models\GetFileOptions;
+use MicrosoftAzureLegacy\Storage\File\Models\GetFileResult;
+use MicrosoftAzureLegacy\Storage\File\Models\ListFileRangesResult;
+use MicrosoftAzureLegacy\Storage\File\Models\CopyFileResult;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Http\HttpFormatter;
 use Psr\Http\Message\StreamInterface;
 use GuzzleHttp\Psr7;
 
@@ -68,7 +68,7 @@ use GuzzleHttp\Psr7;
  * service layer.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\File
+ * @package   MicrosoftAzureLegacy\Storage\File
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
@@ -85,7 +85,7 @@ class FileRestProxy extends ServiceRestProxy implements IFile
      * - http: (array) the underlying guzzle options. refer to
      *   http://docs.guzzlephp.org/en/latest/request-options.html for detailed available options
      * - middlewares: (mixed) the middleware should be either an instance of a sub-class that
-     *   implements {@see MicrosoftAzure\Storage\Common\Middlewares\IMiddleware}, or a
+     *   implements {@see MicrosoftAzureLegacy\Storage\Common\Middlewares\IMiddleware}, or a
      *   `callable` that follows the Guzzle middleware implementation convention
      *
      * Please refer to

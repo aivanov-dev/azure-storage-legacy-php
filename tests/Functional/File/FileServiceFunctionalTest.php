@@ -15,35 +15,35 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Functional\File
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Functional\File
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Functional\File;
+namespace MicrosoftAzureLegacy\Storage\Tests\Functional\File;
 
-use MicrosoftAzure\Storage\File\FileRestProxy;
-use MicrosoftAzure\Storage\File\Models\CreateFileFromContentOptions;
-use MicrosoftAzure\Storage\Tests\Framework\TestResources;
-use MicrosoftAzure\Storage\File\Models\GetFileOptions;
-use MicrosoftAzure\Storage\File\Models\FileServiceOptions;
-use MicrosoftAzure\Storage\File\Models\FileProperties;
-use MicrosoftAzure\Storage\File\Models\CreateFileOptions;
-use MicrosoftAzure\Storage\File\Models\ListSharesOptions;
-use MicrosoftAzure\Storage\File\Models\CreateShareOptions;
-use MicrosoftAzure\Storage\File\Models\PutFileRangeOptions;
-use MicrosoftAzure\Storage\File\Models\CreateDirectoryOptions;
-use MicrosoftAzure\Storage\File\Models\ListDirectoriesAndFilesOptions;
-use MicrosoftAzure\Storage\Common\Models\Range;
-use MicrosoftAzure\Storage\Common\Exceptions\ServiceException;
-use MicrosoftAzure\Storage\Common\Internal\Resources;
-use MicrosoftAzure\Storage\Common\Internal\StorageServiceSettings;
-use MicrosoftAzure\Storage\Common\Internal\Utilities;
-use MicrosoftAzure\Storage\Common\Middlewares\RetryMiddlewareFactory;
-use MicrosoftAzure\Storage\Common\Middlewares\HistoryMiddleware;
-use MicrosoftAzure\Storage\Common\LocationMode;
+use MicrosoftAzureLegacy\Storage\File\FileRestProxy;
+use MicrosoftAzureLegacy\Storage\File\Models\CreateFileFromContentOptions;
+use MicrosoftAzureLegacy\Storage\Tests\Framework\TestResources;
+use MicrosoftAzureLegacy\Storage\File\Models\GetFileOptions;
+use MicrosoftAzureLegacy\Storage\File\Models\FileServiceOptions;
+use MicrosoftAzureLegacy\Storage\File\Models\FileProperties;
+use MicrosoftAzureLegacy\Storage\File\Models\CreateFileOptions;
+use MicrosoftAzureLegacy\Storage\File\Models\ListSharesOptions;
+use MicrosoftAzureLegacy\Storage\File\Models\CreateShareOptions;
+use MicrosoftAzureLegacy\Storage\File\Models\PutFileRangeOptions;
+use MicrosoftAzureLegacy\Storage\File\Models\CreateDirectoryOptions;
+use MicrosoftAzureLegacy\Storage\File\Models\ListDirectoriesAndFilesOptions;
+use MicrosoftAzureLegacy\Storage\Common\Models\Range;
+use MicrosoftAzureLegacy\Storage\Common\Exceptions\ServiceException;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Resources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\StorageServiceSettings;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Utilities;
+use MicrosoftAzureLegacy\Storage\Common\Middlewares\RetryMiddlewareFactory;
+use MicrosoftAzureLegacy\Storage\Common\Middlewares\HistoryMiddleware;
+use MicrosoftAzureLegacy\Storage\Common\LocationMode;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\Psr7\Response;

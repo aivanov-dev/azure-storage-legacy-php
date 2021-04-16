@@ -15,29 +15,29 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Framework
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Framework
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Functional\Blob;
+namespace MicrosoftAzureLegacy\Storage\Tests\Functional\Blob;
 
 use Exception;
-use MicrosoftAzure\Storage\Blob\BlobRestProxy;
-use MicrosoftAzure\Storage\Blob\Models\CopyBlobOptions;
-use MicrosoftAzure\Storage\Blob\Models\CreatePageBlobOptions;
-use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
-use MicrosoftAzure\Storage\Blob\Models\SetBlobTierOptions;
-use MicrosoftAzure\Storage\Common\Internal\Resources;
-use MicrosoftAzure\Storage\Tests\Framework\TestResources;
+use MicrosoftAzureLegacy\Storage\Blob\BlobRestProxy;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CopyBlobOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\CreatePageBlobOptions;
+use MicrosoftAzureLegacy\Storage\Blob\Models\PublicAccessType;
+use MicrosoftAzureLegacy\Storage\Blob\Models\SetBlobTierOptions;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Resources;
+use MicrosoftAzureLegacy\Storage\Tests\Framework\TestResources;
 
 /**
  * Tests for a blob storage account, such as block blob tier.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Framework
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Framework
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2018 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

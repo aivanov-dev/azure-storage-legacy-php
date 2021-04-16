@@ -15,21 +15,21 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Middlewares
+ * @package   MicrosoftAzureLegacy\Storage\Common\Middlewares
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Common\Middlewares;
+namespace MicrosoftAzureLegacy\Storage\Common\Middlewares;
 
 /**
  * This class provides the stack that handles the logic of applying each
  * middlewares to the request or the response.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Middlewares
+ * @package   MicrosoftAzureLegacy\Storage\Common\Middlewares
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

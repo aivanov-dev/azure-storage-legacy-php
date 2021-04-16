@@ -15,16 +15,16 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Mock\Common\Internal\Authentication
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Mock\Common\Internal\Authentication
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Mock\Common\Internal\Authentication;
+namespace MicrosoftAzureLegacy\Storage\Tests\Mock\Common\Internal\Authentication;
 
-use MicrosoftAzure\Storage\Common\Internal\Authentication\OAuthScheme;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Authentication\OAuthScheme;
 
 /**
  * Mock class to wrap OAuthScheme class.

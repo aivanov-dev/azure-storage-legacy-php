@@ -15,22 +15,22 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Blob\Models
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Blob\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
-namespace MicrosoftAzure\Storage\Tests\Unit\Blob\Models;
+namespace MicrosoftAzureLegacy\Storage\Tests\Unit\Blob\Models;
 
-use MicrosoftAzure\Storage\Blob\Models\BlobPrefix;
-use MicrosoftAzure\Storage\Tests\Framework\TestResources;
+use MicrosoftAzureLegacy\Storage\Blob\Models\BlobPrefix;
+use MicrosoftAzureLegacy\Storage\Tests\Framework\TestResources;
 
 /**
  * Unit tests for class BlobPrefix
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Blob\Models
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Blob\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

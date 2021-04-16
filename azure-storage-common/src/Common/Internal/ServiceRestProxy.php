@@ -15,23 +15,23 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Internal
+ * @package   MicrosoftAzureLegacy\Storage\Common\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Common\Internal;
+namespace MicrosoftAzureLegacy\Storage\Common\Internal;
 
-use MicrosoftAzure\Storage\Common\Exceptions\ServiceException;
-use MicrosoftAzure\Storage\Common\Internal\RetryMiddlewareFactory;
-use MicrosoftAzure\Storage\Common\Internal\Serialization\XmlSerializer;
-use MicrosoftAzure\Storage\Common\Models\ServiceOptions;
-use MicrosoftAzure\Storage\Common\Internal\Http\HttpCallContext;
-use MicrosoftAzure\Storage\Common\Internal\Middlewares\MiddlewareBase;
-use MicrosoftAzure\Storage\Common\Middlewares\MiddlewareStack;
-use MicrosoftAzure\Storage\Common\LocationMode;
+use MicrosoftAzureLegacy\Storage\Common\Exceptions\ServiceException;
+use MicrosoftAzureLegacy\Storage\Common\Internal\RetryMiddlewareFactory;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Serialization\XmlSerializer;
+use MicrosoftAzureLegacy\Storage\Common\Models\ServiceOptions;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Http\HttpCallContext;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Middlewares\MiddlewareBase;
+use MicrosoftAzureLegacy\Storage\Common\Middlewares\MiddlewareStack;
+use MicrosoftAzureLegacy\Storage\Common\LocationMode;
 use GuzzleHttp\Promise\EachPromise;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\Request;
@@ -45,7 +45,7 @@ use Psr\Http\Message\ResponseInterface;
  *
  * @ignore
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Internal
+ * @package   MicrosoftAzureLegacy\Storage\Common\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

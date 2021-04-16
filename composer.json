@@ -27,16 +27,16 @@
     },
     "autoload": {
         "psr-4": {
-            "MicrosoftAzure\\Storage\\Blob\\": "azure-storage-blob/src/Blob",
-            "MicrosoftAzure\\Storage\\Table\\": "azure-storage-table/src/Table",
-            "MicrosoftAzure\\Storage\\Queue\\": "azure-storage-queue/src/Queue",
-            "MicrosoftAzure\\Storage\\File\\": "azure-storage-file/src/File",
-            "MicrosoftAzure\\Storage\\Common\\": "azure-storage-common/src/Common"
+            "MicrosoftAzureLegacy\\Storage\\Blob\\": "azure-storage-blob/src/Blob",
+            "MicrosoftAzureLegacy\\Storage\\Table\\": "azure-storage-table/src/Table",
+            "MicrosoftAzureLegacy\\Storage\\Queue\\": "azure-storage-queue/src/Queue",
+            "MicrosoftAzureLegacy\\Storage\\File\\": "azure-storage-file/src/File",
+            "MicrosoftAzureLegacy\\Storage\\Common\\": "azure-storage-common/src/Common"
         }
     },
     "autoload-dev": {
     	"psr-4": {
-    	    "MicrosoftAzure\\Storage\\Tests\\": "tests/"
+    	    "MicrosoftAzureLegacy\\Storage\\Tests\\": "tests/"
     	}
     },
     "archive": {

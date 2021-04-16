@@ -15,28 +15,28 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Table\Models
+ * @package   MicrosoftAzureLegacy\Storage\Table\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Table\Models;
+namespace MicrosoftAzureLegacy\Storage\Table\Models;
 
-use MicrosoftAzure\Storage\Table\Internal\TableResources as Resources;
-use MicrosoftAzure\Storage\Common\Internal\Utilities;
-use MicrosoftAzure\Storage\Common\Internal\Http\HttpFormatter;
-use MicrosoftAzure\Storage\Common\Internal\ServiceRestProxy;
-use MicrosoftAzure\Storage\Table\Internal\IMimeReaderWriter;
-use MicrosoftAzure\Storage\Table\Internal\IODataReaderWriter;
+use MicrosoftAzureLegacy\Storage\Table\Internal\TableResources as Resources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Utilities;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Http\HttpFormatter;
+use MicrosoftAzureLegacy\Storage\Common\Internal\ServiceRestProxy;
+use MicrosoftAzureLegacy\Storage\Table\Internal\IMimeReaderWriter;
+use MicrosoftAzureLegacy\Storage\Table\Internal\IODataReaderWriter;
 use GuzzleHttp\Psr7\Response;
 
 /**
  * Holds results from batch API.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Table\Models
+ * @package   MicrosoftAzureLegacy\Storage\Table\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
@@ -117,7 +117,7 @@ class BatchResult
      * @param IODataReaderWriter $odataSerializer The OData reader and writer.
      * @param IMimeReaderWriter  $mimeSerializer  The MIME reader and writer.
      *
-     * @return \MicrosoftAzure\Storage\Table\Models\BatchResult
+     * @return \MicrosoftAzureLegacy\Storage\Table\Models\BatchResult
      *
      * @throws \InvalidArgumentException
      */

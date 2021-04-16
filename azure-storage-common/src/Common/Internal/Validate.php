@@ -16,22 +16,22 @@
  *
  * @ignore
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Internal
+ * @package   MicrosoftAzureLegacy\Storage\Common\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Common\Internal;
+namespace MicrosoftAzureLegacy\Storage\Common\Internal;
 
-use MicrosoftAzure\Storage\Common\Exceptions\InvalidArgumentTypeException;
+use MicrosoftAzureLegacy\Storage\Common\Exceptions\InvalidArgumentTypeException;
 
 /**
  * Validates against a condition and throws an exception in case of failure.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Common\Internal
+ * @package   MicrosoftAzureLegacy\Storage\Common\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

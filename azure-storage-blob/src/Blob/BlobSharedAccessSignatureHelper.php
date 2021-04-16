@@ -15,25 +15,25 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Blob
+ * @package   MicrosoftAzureLegacy\Storage\Blob
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Blob;
+namespace MicrosoftAzureLegacy\Storage\Blob;
 
-use MicrosoftAzure\Storage\Blob\Internal\BlobResources as Resources;
-use MicrosoftAzure\Storage\Common\Internal\Utilities;
-use MicrosoftAzure\Storage\Common\Internal\Validate;
-use MicrosoftAzure\Storage\Common\SharedAccessSignatureHelper;
+use MicrosoftAzureLegacy\Storage\Blob\Internal\BlobResources as Resources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Utilities;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Validate;
+use MicrosoftAzureLegacy\Storage\Common\SharedAccessSignatureHelper;
 
 /**
  * Provides methods to generate Azure Storage Shared Access Signature
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Blob
+ * @package   MicrosoftAzureLegacy\Storage\Blob
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

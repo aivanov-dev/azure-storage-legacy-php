@@ -15,24 +15,24 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Table\Models
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Table\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
-namespace MicrosoftAzure\Storage\Tests\Unit\Table\Models;
+namespace MicrosoftAzureLegacy\Storage\Tests\Unit\Table\Models;
 
-use MicrosoftAzure\Storage\Table\Models\GetEntityResult;
-use MicrosoftAzure\Storage\Table\Internal\JsonODataReaderWriter;
-use MicrosoftAzure\Storage\Table\Models\Entity;
-use MicrosoftAzure\Storage\Tests\Framework\TestResources;
+use MicrosoftAzureLegacy\Storage\Table\Models\GetEntityResult;
+use MicrosoftAzureLegacy\Storage\Table\Internal\JsonODataReaderWriter;
+use MicrosoftAzureLegacy\Storage\Table\Models\Entity;
+use MicrosoftAzureLegacy\Storage\Tests\Framework\TestResources;
 
 /**
  * Unit tests for class GetEntityResult
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Table\Models
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Table\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

@@ -15,24 +15,24 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Common\Internal
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Unit\Common\Internal;
+namespace MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Internal;
 
-use MicrosoftAzure\Storage\Common\Logger;
-use MicrosoftAzure\Storage\Common\Internal\Resources;
-use MicrosoftAzure\Storage\Tests\Framework\VirtualFileSystem;
+use MicrosoftAzureLegacy\Storage\Common\Logger;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Resources;
+use MicrosoftAzureLegacy\Storage\Tests\Framework\VirtualFileSystem;
 
 /**
  * Unit tests for class Logger
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Common\Internal
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

@@ -15,67 +15,67 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Table
+ * @package   MicrosoftAzureLegacy\Storage\Table
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Table;
+namespace MicrosoftAzureLegacy\Storage\Table;
 
-use MicrosoftAzure\Storage\Common\Internal\Authentication\SharedAccessSignatureAuthScheme;
-use MicrosoftAzure\Storage\Common\Internal\Middlewares\CommonRequestMiddleware;
-use MicrosoftAzure\Storage\Common\Internal\Serialization\XmlSerializer;
-use MicrosoftAzure\Storage\Common\Internal\ServiceRestTrait;
-use MicrosoftAzure\Storage\Common\Internal\StorageServiceSettings;
-use MicrosoftAzure\Storage\Common\Internal\Utilities;
-use MicrosoftAzure\Storage\Common\Internal\Validate;
-use MicrosoftAzure\Storage\Common\Internal\Http\HttpCallContext;
-use MicrosoftAzure\Storage\Common\Internal\ServiceRestProxy;
-use MicrosoftAzure\Storage\Common\LocationMode;
-use MicrosoftAzure\Storage\Table\Internal\Authentication\TableSharedKeyLiteAuthScheme;
-use MicrosoftAzure\Storage\Table\Internal\ITable;
-use MicrosoftAzure\Storage\Table\Internal\JsonODataReaderWriter;
-use MicrosoftAzure\Storage\Table\Internal\MimeReaderWriter;
-use MicrosoftAzure\Storage\Table\Internal\TableResources as Resources;
-use MicrosoftAzure\Storage\Table\Models\TableServiceOptions;
-use MicrosoftAzure\Storage\Table\Models\EdmType;
-use MicrosoftAzure\Storage\Table\Models\Entity;
-use MicrosoftAzure\Storage\Table\Models\Query;
-use MicrosoftAzure\Storage\Table\Models\Filters\Filter;
-use MicrosoftAzure\Storage\Table\Models\Filters\PropertyNameFilter;
-use MicrosoftAzure\Storage\Table\Models\Filters\ConstantFilter;
-use MicrosoftAzure\Storage\Table\Models\Filters\UnaryFilter;
-use MicrosoftAzure\Storage\Table\Models\Filters\BinaryFilter;
-use MicrosoftAzure\Storage\Table\Models\Filters\QueryStringFilter;
-use MicrosoftAzure\Storage\Table\Models\GetTableResult;
-use MicrosoftAzure\Storage\Table\Models\GetTableOptions;
-use MicrosoftAzure\Storage\Table\Models\GetEntityOptions;
-use MicrosoftAzure\Storage\Table\Models\TableServiceCreateOptions;
-use MicrosoftAzure\Storage\Table\Models\QueryTablesOptions;
-use MicrosoftAzure\Storage\Table\Models\QueryTablesResult;
-use MicrosoftAzure\Storage\Table\Models\InsertEntityResult;
-use MicrosoftAzure\Storage\Table\Models\UpdateEntityResult;
-use MicrosoftAzure\Storage\Table\Models\QueryEntitiesOptions;
-use MicrosoftAzure\Storage\Table\Models\QueryEntitiesResult;
-use MicrosoftAzure\Storage\Table\Models\DeleteEntityOptions;
-use MicrosoftAzure\Storage\Table\Models\GetEntityResult;
-use MicrosoftAzure\Storage\Table\Models\BatchOperationType;
-use MicrosoftAzure\Storage\Table\Models\BatchOperationParameterName;
-use MicrosoftAzure\Storage\Table\Models\BatchResult;
-use MicrosoftAzure\Storage\Table\Models\TableACL;
-use MicrosoftAzure\Storage\Common\Internal\Http\HttpFormatter;
-use MicrosoftAzure\Storage\Table\Internal\IODataReaderWriter;
-use MicrosoftAzure\Storage\Table\Internal\IMimeReaderWriter;
-use MicrosoftAzure\Storage\Common\Internal\Serialization\ISerializer;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Authentication\SharedAccessSignatureAuthScheme;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Middlewares\CommonRequestMiddleware;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Serialization\XmlSerializer;
+use MicrosoftAzureLegacy\Storage\Common\Internal\ServiceRestTrait;
+use MicrosoftAzureLegacy\Storage\Common\Internal\StorageServiceSettings;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Utilities;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Validate;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Http\HttpCallContext;
+use MicrosoftAzureLegacy\Storage\Common\Internal\ServiceRestProxy;
+use MicrosoftAzureLegacy\Storage\Common\LocationMode;
+use MicrosoftAzureLegacy\Storage\Table\Internal\Authentication\TableSharedKeyLiteAuthScheme;
+use MicrosoftAzureLegacy\Storage\Table\Internal\ITable;
+use MicrosoftAzureLegacy\Storage\Table\Internal\JsonODataReaderWriter;
+use MicrosoftAzureLegacy\Storage\Table\Internal\MimeReaderWriter;
+use MicrosoftAzureLegacy\Storage\Table\Internal\TableResources as Resources;
+use MicrosoftAzureLegacy\Storage\Table\Models\TableServiceOptions;
+use MicrosoftAzureLegacy\Storage\Table\Models\EdmType;
+use MicrosoftAzureLegacy\Storage\Table\Models\Entity;
+use MicrosoftAzureLegacy\Storage\Table\Models\Query;
+use MicrosoftAzureLegacy\Storage\Table\Models\Filters\Filter;
+use MicrosoftAzureLegacy\Storage\Table\Models\Filters\PropertyNameFilter;
+use MicrosoftAzureLegacy\Storage\Table\Models\Filters\ConstantFilter;
+use MicrosoftAzureLegacy\Storage\Table\Models\Filters\UnaryFilter;
+use MicrosoftAzureLegacy\Storage\Table\Models\Filters\BinaryFilter;
+use MicrosoftAzureLegacy\Storage\Table\Models\Filters\QueryStringFilter;
+use MicrosoftAzureLegacy\Storage\Table\Models\GetTableResult;
+use MicrosoftAzureLegacy\Storage\Table\Models\GetTableOptions;
+use MicrosoftAzureLegacy\Storage\Table\Models\GetEntityOptions;
+use MicrosoftAzureLegacy\Storage\Table\Models\TableServiceCreateOptions;
+use MicrosoftAzureLegacy\Storage\Table\Models\QueryTablesOptions;
+use MicrosoftAzureLegacy\Storage\Table\Models\QueryTablesResult;
+use MicrosoftAzureLegacy\Storage\Table\Models\InsertEntityResult;
+use MicrosoftAzureLegacy\Storage\Table\Models\UpdateEntityResult;
+use MicrosoftAzureLegacy\Storage\Table\Models\QueryEntitiesOptions;
+use MicrosoftAzureLegacy\Storage\Table\Models\QueryEntitiesResult;
+use MicrosoftAzureLegacy\Storage\Table\Models\DeleteEntityOptions;
+use MicrosoftAzureLegacy\Storage\Table\Models\GetEntityResult;
+use MicrosoftAzureLegacy\Storage\Table\Models\BatchOperationType;
+use MicrosoftAzureLegacy\Storage\Table\Models\BatchOperationParameterName;
+use MicrosoftAzureLegacy\Storage\Table\Models\BatchResult;
+use MicrosoftAzureLegacy\Storage\Table\Models\TableACL;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Http\HttpFormatter;
+use MicrosoftAzureLegacy\Storage\Table\Internal\IODataReaderWriter;
+use MicrosoftAzureLegacy\Storage\Table\Internal\IMimeReaderWriter;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Serialization\ISerializer;
 
 /**
  * This class constructs HTTP requests and receive HTTP responses for table
  * service layer.
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Table
+ * @package   MicrosoftAzureLegacy\Storage\Table
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
@@ -102,7 +102,7 @@ class TableRestProxy extends ServiceRestProxy implements ITable
      * - http: (array) the underlying guzzle options. refer to
      *   http://docs.guzzlephp.org/en/latest/request-options.html for detailed available options
      * - middlewares: (mixed) the middleware should be either an instance of a sub-class that
-     *   implements {@see MicrosoftAzure\Storage\Common\Middlewares\IMiddleware}, or a
+     *   implements {@see MicrosoftAzureLegacy\Storage\Common\Middlewares\IMiddleware}, or a
      *   `callable` that follows the Guzzle middleware implementation convention
      *
      * Please refer to
@@ -249,7 +249,7 @@ class TableRestProxy extends ServiceRestProxy implements ITable
      * @param Entity $entity The entity object.
      * @param string $type   The API type.
      *
-     * @return \MicrosoftAzure\Storage\Common\Internal\Http\HttpCallContext
+     * @return \MicrosoftAzureLegacy\Storage\Common\Internal\Http\HttpCallContext
      *
      * @throws \InvalidArgumentException
      */

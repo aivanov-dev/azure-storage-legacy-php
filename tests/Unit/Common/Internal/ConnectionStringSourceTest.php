@@ -15,22 +15,22 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Common\Internal
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\Unit\Common\Internal;
+namespace MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Internal;
 
-use MicrosoftAzure\Storage\Common\Internal\ConnectionStringSource;
+use MicrosoftAzureLegacy\Storage\Common\Internal\ConnectionStringSource;
 
 /**
  * Unit tests for class ConnectionStringSource
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Common\Internal
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Common\Internal
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
@@ -40,7 +40,7 @@ class ConnectionStringSourceTest extends \PHPUnit\Framework\TestCase
 {
     public function setUp()
     {
-        $property = new \ReflectionProperty('MicrosoftAzure\Storage\Common\Internal\ConnectionStringSource', '_isInitialized');
+        $property = new \ReflectionProperty('MicrosoftAzureLegacy\Storage\Common\Internal\ConnectionStringSource', '_isInitialized');
         $property->setAccessible(true);
         $property->setValue(null);
     }

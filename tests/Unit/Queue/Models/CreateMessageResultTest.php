@@ -15,24 +15,24 @@
  * PHP version 5
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Queue\Models
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Queue\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
  * @link      https://github.com/azure/azure-storage-php
  */
 
-namespace MicrosoftAzure\Storage\Tests\unit\Queue\Models;
+namespace MicrosoftAzureLegacy\Storage\Tests\unit\Queue\Models;
 
-use MicrosoftAzure\Storage\Common\Internal\Utilities;
-use MicrosoftAzure\Storage\Queue\Models\CreateMessageResult;
-use MicrosoftAzure\Storage\Tests\Framework\TestResources;
+use MicrosoftAzureLegacy\Storage\Common\Internal\Utilities;
+use MicrosoftAzureLegacy\Storage\Queue\Models\CreateMessageResult;
+use MicrosoftAzureLegacy\Storage\Tests\Framework\TestResources;
 
 /**
  * Unit tests for class CreateMessageResult
  *
  * @category  Microsoft
- * @package   MicrosoftAzure\Storage\Tests\Unit\Queue\Models
+ * @package   MicrosoftAzureLegacy\Storage\Tests\Unit\Queue\Models
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2017 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE

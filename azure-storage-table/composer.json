@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "MicrosoftAzure\\Storage\\Table\\": "src/Table"
+            "MicrosoftAzureLegacy\\Storage\\Table\\": "src/Table"
         }
     }
 }
