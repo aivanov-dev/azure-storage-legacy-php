@@ -86,7 +86,8 @@ class QueueSharedAccessSignatureHelper extends SharedAccessSignatureHelper
         // validate and sanitize signed permissions
         $this->validateAndSanitizeStringWithArray(
             strtolower($signedPermissions),
-            Resources::ACCESS_PERMISSIONS[Resources::RESOURCE_TYPE_QUEUE]
+            Resources::$accessPermissions[Resources::RESOURCE_TYPE_QUEUE]
+//            Resources::ACCESS_PERMISSIONS[Resources::RESOURCE_TYPE_QUEUE]
         );
 
         // check that expiry is valid

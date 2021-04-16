@@ -120,7 +120,8 @@ class FileSharedAccessSignatureHelper extends SharedAccessSignatureHelper
         // validate and sanitize signed permissions
         $this->validateAndSanitizeStringWithArray(
             strtolower($signedPermissions),
-            Resources::ACCESS_PERMISSIONS[$signedResource]
+            Resources::$accessPermissions[$signedResource]
+//            Resources::ACCESS_PERMISSIONS[$signedResource]
         );
 
         // check that expiry is valid

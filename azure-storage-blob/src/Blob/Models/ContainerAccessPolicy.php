@@ -46,7 +46,8 @@ class ContainerAccessPolicy extends AccessPolicy
      */
     public static function getResourceValidPermissions()
     {
-        return BlobResources::ACCESS_PERMISSIONS[
+        return BlobResources::$accessPermissions[
+//        return BlobResources::ACCESS_PERMISSIONS[
             BlobResources::RESOURCE_TYPE_CONTAINER
         ];
     }

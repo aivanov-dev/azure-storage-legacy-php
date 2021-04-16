@@ -62,10 +62,15 @@ class FileResources extends Resources
     const XTAG_SHARE_USAGE = 'ShareUsage';
 
     // Resource permissions
-    const ACCESS_PERMISSIONS = [
+    public static $accessPermissions = [
         Resources::RESOURCE_TYPE_FILE => ['r', 'c', 'w', 'd'],
         Resources::RESOURCE_TYPE_SHARE => ['r', 'c', 'w', 'd', 'l']
     ];
+
+//    const ACCESS_PERMISSIONS = [
+//        Resources::RESOURCE_TYPE_FILE => ['r', 'c', 'w', 'd'],
+//        Resources::RESOURCE_TYPE_SHARE => ['r', 'c', 'w', 'd', 'l']
+//    ];
 
     // @codingStandardsIgnoreEnd
 }

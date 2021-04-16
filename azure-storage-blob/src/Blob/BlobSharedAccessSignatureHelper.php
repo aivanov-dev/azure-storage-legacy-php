@@ -120,7 +120,8 @@ class BlobSharedAccessSignatureHelper extends SharedAccessSignatureHelper
         // validate and sanitize signed permissions
         $signedPermissions = $this->validateAndSanitizeStringWithArray(
             strtolower($signedPermissions),
-            Resources::ACCESS_PERMISSIONS[$signedResource]
+            Resources::$accessPermissions[$signedResource]
+//            Resources::ACCESS_PERMISSIONS[$signedResource]
         );
 
         // check that expiry is valid

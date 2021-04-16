@@ -95,7 +95,8 @@ class TableSharedAccessSignatureHelper extends SharedAccessSignatureHelper
         // validate and sanitize signed permissions
         $this->validateAndSanitizeStringWithArray(
             strtolower($signedPermissions),
-            Resources::ACCESS_PERMISSIONS[Resources::RESOURCE_TYPE_TABLE]
+            Resources::$accessPermissions[Resources::RESOURCE_TYPE_TABLE]
+//            Resources::ACCESS_PERMISSIONS[Resources::RESOURCE_TYPE_TABLE]
         );
 
         // check that expiry is valid

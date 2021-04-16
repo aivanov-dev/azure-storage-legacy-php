@@ -91,9 +91,13 @@ class TableResources extends Resources
     const JSON_CUSTOMER_SINCE = 'CustomerSince';
 
     // Resource permissions
-    const ACCESS_PERMISSIONS = [
+    public static $accessPermissions = [
         Resources::RESOURCE_TYPE_TABLE => ['r', 'a', 'u', 'd']
     ];
+
+//    const ACCESS_PERMISSIONS = [
+//        Resources::RESOURCE_TYPE_TABLE => ['r', 'a', 'u', 'd']
+//    ];
 
     // @codingStandardsIgnoreEnd
 }

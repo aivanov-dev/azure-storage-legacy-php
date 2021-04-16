@@ -101,10 +101,15 @@ class BlobResources extends Resources
     const QP_PRE_SNAPSHOT = 'prevsnapshot';
 
     // Resource permissions
-    const ACCESS_PERMISSIONS = [
+    public static $accessPermissions = [
         Resources::RESOURCE_TYPE_BLOB => ['r', 'a', 'c', 'w', 'd'],
         Resources::RESOURCE_TYPE_CONTAINER => ['r', 'a', 'c', 'w', 'd', 'l']
     ];
+
+//    const ACCESS_PERMISSIONS = [
+//        Resources::RESOURCE_TYPE_BLOB => ['r', 'a', 'c', 'w', 'd'],
+//        Resources::RESOURCE_TYPE_CONTAINER => ['r', 'a', 'c', 'w', 'd', 'l']
+//    ];
 
     // @codingStandardsIgnoreEnd
 }

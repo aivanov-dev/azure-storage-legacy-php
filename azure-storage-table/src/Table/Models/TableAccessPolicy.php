@@ -46,7 +46,8 @@ class TableAccessPolicy extends AccessPolicy
      */
     public static function getResourceValidPermissions()
     {
-        return TableResources::ACCESS_PERMISSIONS[
+        return TableResources::$accessPermissions[
+//        return TableResources::ACCESS_PERMISSIONS[
             TableResources::RESOURCE_TYPE_TABLE
         ];
     }

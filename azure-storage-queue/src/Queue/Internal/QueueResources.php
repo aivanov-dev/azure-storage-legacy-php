@@ -61,9 +61,12 @@ class QueueResources extends Resources
     const QP_QUEUE_MESSAGE = 'QueueMessage';
 
     // Resource permissions
-    const ACCESS_PERMISSIONS = [
+    public static $accessPermissions = [
         Resources::RESOURCE_TYPE_QUEUE => ['r', 'a', 'u', 'p']
     ];
+//    const ACCESS_PERMISSIONS = [
+//        Resources::RESOURCE_TYPE_QUEUE => ['r', 'a', 'u', 'p']
+//    ];
 
     // @codingStandardsIgnoreEnd
 }
