@@ -1,6 +1,6 @@
 {
-    "name": "microsoft/azure-storage",
-    "description": "This project provides a set of PHP client libraries that make it easy to access Microsoft Azure storage APIs.",
+    "name": "aivanov-dev/azure-storage-legacy-php",
+    "description": "This is a clone from https://github.com/Azure/azure-storage-php modified to support php 5.5.",
     "keywords": [ "php", "azure", "storage", "sdk" ],
     "license": "MIT",
     "authors": [
@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "php": ">=5.6.0",
+        "php": ">=5.5.0",
 		"guzzlehttp/guzzle": "~6.0|^7.0"
     },
     "require-dev": {
