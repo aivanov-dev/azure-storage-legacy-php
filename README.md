@@ -1,4 +1,7 @@
 # Microsoft Azure Storage PHP Client Libraries
+This is a clone from https://github.com/Azure/azure-storage-php modified to support php 5.5.
+
+# Microsoft Azure Storage PHP Client Libraries
 
 This project provides a set of PHP client libraries that make it easy to access Microsoft Azure Storage services (blobs, tables, queues and files). For documentation on how to host PHP applications on Microsoft Azure, please see the [Microsoft Azure PHP Developer Center](http://www.windowsazure.com/en-us/develop/php/).
 
